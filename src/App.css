@@ -42,14 +42,34 @@
 }
 
 .project {
-  width: 200px;
-  height: 200px;
-  padding: 5px;
+  width: 400px;
+  height: 400px;
   margin: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 1%;
   display: inline-table;
-  background-color: #282c34;
+  background-color: grey;
+  position: relative;
+}
+
+.thumbnail_title {
+  text-align: center;
+  font-size: large;
+  padding: 20px;
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+}
+
+.thumbnail_date {
+  text-align: center;
+  font-size: large;
+  padding: 20px;
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
 }
 
 .project:hover {
