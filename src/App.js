@@ -14,14 +14,14 @@ function App() {
       <div className="App">
         
         <Route path="/articles" component={Articles} />
-        <Route path="/" component={About} />
+        <Route path="/about" component={About} />
         <Route path="/" component={Projects} />
       
         <br/>
 
         <div className="navigation" align="center">
           <div className="navigation-sub">
-            <Link to="/" className="item">Projects</Link>
+            <Link to="/projects" className="item">Projects</Link>
             <Link to="/articles" className="item">Articles</Link>
             <Link to="/about" className="item">About</Link>
           </div>
