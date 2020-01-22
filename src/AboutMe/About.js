@@ -1,14 +1,11 @@
 import React from "react"
+import "./About.css"
  
 function About(props) {
   return (
     <div align="center">
-      <h1>About</h1>
-
-      <table>
-            <ul> HAHAH </ul>
-            <ul> HAHAhahhf </ul>
-        </table>
+      <br/><br/>
+      <h1>About Me</h1>
     </div>
   )
 }
