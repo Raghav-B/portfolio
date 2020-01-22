@@ -1,15 +1,17 @@
 import React from 'react'; // Import the Component component from React
-import {Link} from 'react-router-dom'; // Import the Link component
+import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {NavHashLink} from 'react-router-hash-link';
 import './Thumbnail.css';
 
 function Thumbnail(props) {
   return (
     <Link to={props.link}>
-    <div className="thumbnail">
-      <div className="thumbnail_title_container">{props.title}</div>
-      <img src={props.image} alt="Project Image" className="thumbnail_image"/>
-      <div className="thumbnail_date">{props.category}</div>
-    </div>
+      <div className="thumbnail_container">
+        <div className="thumbnail_title">{props.title}</div>
+        <div className="thumbnail_image_container">
+          <img src={props.image} alt="Project Image" className="thumbnail_image"/>
+        </div>
+      </div>
     </Link>
   );
 }

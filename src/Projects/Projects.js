@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Link} from 'react-router-dom';
 import Thumbnail from '../Thumbnail.js';
 import '../App.css';
 import "../Thumbnail.css";
+import "../Section.css";
 import RoboMaster from "../WorkExperience/RoboMaster.js";
 
  
@@ -10,9 +11,11 @@ function Projects(props) {
     return (
         <BrowserRouter>
             <Route path="/robomaster" component={RoboMaster} />
-            <br/><br/>
-            <div>
+            <div className="section_container">
+                <br/><br/>
                 <h1>Projects</h1>
+
+                <h2>2019</h2>
                 <Thumbnail
                     link="robomaster"
                     image={require("./imgs/eggventory_ui.png")}
@@ -43,6 +46,7 @@ function Projects(props) {
                     title="Remotely-Controller Search & Rescue Robot"
                     category="Feb 2019 - Apr 2019"
                 />
+                
                 <Thumbnail
                     link="robomaster"
                     image={require("./imgs/innoventure_exploded_cad.png")}
@@ -61,6 +65,10 @@ function Projects(props) {
                     title="Dungeon Crawl - Quizzes Gamified as an RPG"
                     category="Feb 2019"
                 />
+
+                <h2>2018 and earlier</h2>
+                
+                
                 <Thumbnail
                     link="robomaster"
                     image={require("./imgs/video_frame.png")}
@@ -73,7 +81,9 @@ function Projects(props) {
                     title="Bloccad, Minecraft-esque CAD Modelling"
                     category="Jun 2017 - Aug 2018"
                 />
+                <br/><br/><br/><br/>
             </div>
+            <div className="section_endline"></div>
         </BrowserRouter>
     )
 }

@@ -5,6 +5,7 @@ import About from "./AboutMe/About.js";
 import WorkExperience from "./WorkExperience/WorkExperience.js";
 import Projects from "./Projects/Projects.js";
 import Leadership from "./Leadership/Leadership.js";
+import ContactMe from "./ContactMe/ContactMe.js";
 import './App.css';
 
 var isClickScrolling = false;
@@ -72,14 +73,14 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        
+
         <div className="App">
           
           <div id="navigation_bar" className="nav_bar">
 
             <Link 
               id="aboutme_anchor"
-              className="content nav_bar_unselected"
+              className="content nav_bar_selected"
               onClick={(event) => this.navHighlight(event)}
               to="#aboutme">About
             </Link>
@@ -104,7 +105,7 @@ class App extends Component {
             <Link 
               id="contactme_anchor"
               className="content nav_bar_unselected" 
-              onClick={() => this.navHighlight()} 
+              onClick={(event) => this.navHighlight(event)} 
               to="#contactme">Contact Me
             </Link>
           </div>
@@ -120,6 +121,9 @@ class App extends Component {
           </div>
           <div id="leadership" className="section">
             <Leadership></Leadership>
+          </div>
+          <div id="contactme" className="section">
+            <ContactMe></ContactMe>
           </div>
 
         </div>

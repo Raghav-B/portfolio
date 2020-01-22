@@ -4,13 +4,20 @@ import Thumbnail from '../Thumbnail.js'; // Import the Thumbnail component
 import '../App.css';
 import "../Thumbnail.css";
 import "../Section.css";
+import "./ContactMe.css";
  
-function Projects(props) {
+function ContactMe(props) {
     return (
         <BrowserRouter>
             <div className="section_container">
                 <br/><br/>
-                <h1>Leadership</h1>
+                <h1>Contact Me</h1>
+                
+                <br/>
+                <div className="contact_box">
+                    Hi there!
+                </div>
+
                 <br/><br/><br/><br/>
             </div>
             
@@ -19,4 +26,4 @@ function Projects(props) {
     )
 }
  
-export default Projects;
+export default ContactMe;
