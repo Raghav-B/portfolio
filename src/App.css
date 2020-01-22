@@ -4,6 +4,10 @@
   color: light
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav_bar {
   width: 100%;
   position: fixed;
@@ -25,7 +29,6 @@
   font-size: medium;
   text-align: center;
   font-weight: 750;
-  color: white;
   padding: 40px;
 }
 
@@ -34,10 +37,16 @@
   color: darkgray;
 }
 
-.test {
+.nav_bar_selected {
   text-decoration: none;
-  background-color: darkblue;
+  background-color: whitesmoke;
+  color: black;
 }
+
+.nav_bar_unselected {
+  color: white;
+}
+
 
 
 
