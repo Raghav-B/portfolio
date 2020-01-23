@@ -10,7 +10,6 @@ import RoboMaster from "../WorkExperience/RoboMaster.js";
 function Projects(props) {
     return (
         <BrowserRouter>
-            <Route path="/robomaster" component={RoboMaster} />
             <div className="section_container">
                 <br/><br/>
                 <h1>Projects</h1>
