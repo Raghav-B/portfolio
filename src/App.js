@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 import {NavHashLink as Link} from 'react-router-hash-link';
 import About from "./AboutMe/About.js";
+import Education from "./Education/Education.js";
 import WorkExperience from "./WorkExperience/WorkExperience.js";
 import Projects from "./Projects/Projects.js";
 import Leadership from "./Leadership/Leadership.js";
@@ -30,7 +31,7 @@ class App extends Component {
       var sectionArr = document.getElementsByClassName("section");
       for (var i = 0; i < sectionArr.length; i++) {
         const top = sectionArr[i].getBoundingClientRect().top;
-        if (top >= 0 && top <= window.innerHeight/1.5) {
+        if (top >= 0 && top <= window.innerHeight) {
           window.location.hash = sectionArr[i].id;
 
           var curSection = sectionArr[i].id+"_anchor";
@@ -86,6 +87,12 @@ class App extends Component {
               to="#aboutme">About
             </Link>
             <Link 
+              id="education_anchor"
+              className="content nav_bar_unselected"
+              onClick={(event) => this.navHighlight(event)}
+              to="#education">Education
+            </Link>
+            <Link 
               id="workexperience_anchor"
               className="content nav_bar_unselected" 
               onClick={(event) => this.navHighlight(event)} 
@@ -113,6 +120,9 @@ class App extends Component {
 
           <div id="aboutme" className="section initially_invisible">
             <About></About>
+          </div>
+          <div id="education" className="section initially_invisible">
+            <Education></Education>
           </div>
           <div id="workexperience" className="section initially_invisible">
             <WorkExperience></WorkExperience>

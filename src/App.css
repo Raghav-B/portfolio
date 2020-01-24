@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.section {
+  padding-top: 40px;
+  margin-top: -40px;
+}
+
 .nav_bar {
   width: 100%;
   position: fixed;

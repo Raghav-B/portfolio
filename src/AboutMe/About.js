@@ -1,5 +1,5 @@
 import React from "react"
-import Showcase from "./Showcase.js";
+import Showcase from "./AboutShowcase.js";
 import "../Section.css"
 import "./About.css"
 import GithubLogo from "./imgs/github1.svg";
@@ -12,10 +12,9 @@ function About(props) {
       <div className="section_container">
         <br/><br/>
         <h1>Raghav Bhardwaj</h1>
-        <br/><br/>
+        <br/>
         <div className="about_body_text">
-          Welcome!
-          <br/><br/>
+          <h2>Welcome!</h2>
           I am Raghav, a Computer Engineering sophomore at the National University of Singapore,
           and a receipient of the National Youth Achievement Award from H.E. Madam President Halimah Yacob.
           <br/><br/>

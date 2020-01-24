@@ -4,8 +4,6 @@ import Thumbnail from '../Thumbnail.js';
 import '../App.css';
 import "../Thumbnail.css";
 import "../Section.css";
-import RoboMaster from "../WorkExperience/RoboMaster.js";
-
  
 function Projects(props) {
     return (
