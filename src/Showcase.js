@@ -21,18 +21,18 @@ function Showcase(props) {
 
   return (
     <div className="container">
-      
-      <div className="mySlides">
+
+      <div className="slide m_hide">
         <div className="numbertext">1 / 3</div>
         <img src={require("./WorkExperience/imgs/anomaly_detection.png")}></img>
       </div>
 
-      <div className="mySlides">
+      <div className="slide m_hide">
         <div className="numbertext">2 / 3</div>
         <img src={require("./WorkExperience/imgs/code_blur.png")}></img>
       </div>
 
-      <div className="mySlides">
+      <div className="slide m_hide">
         <div className="numbertext">3 / 3</div>
         <img src={require("./WorkExperience/imgs/detection_test.jpg")}></img>
       </div>
@@ -69,7 +69,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("slide");
   console.log(slides.length);
 
 
@@ -77,9 +77,15 @@ function showSlides(n) {
   //console.log("slides: " + slides);
   //var dots = document.getElementsByClassName("demo");
   //console.log("dots: " + dots);
-  //if (n > slides.length) {slideIndex = 1}
-  //if (n < 1) {slideIndex = slides.length}
-  //for (i = 0; i < slides.length; i++) {
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].className = "slide m_hide";
+  }
+
+  slides[slideIndex-1].className = "slide m+show";
+    
+    
     //slides[i].style.display = "none";
   //}
   //for (i = 0; i < dots.length; i++) {
