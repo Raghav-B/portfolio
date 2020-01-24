@@ -1,0 +1,9 @@
+.initially_invisible {
+    opacity: 0;
+    transition: opacity 0.5s .25s ease-out;
+    will-change: opacity;
+}
+
+.is_visible {
+    opacity: 1;
+}

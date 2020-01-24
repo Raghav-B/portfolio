@@ -7,6 +7,7 @@ import Projects from "./Projects/Projects.js";
 import Leadership from "./Leadership/Leadership.js";
 import ContactMe from "./ContactMe/ContactMe.js";
 import './App.css';
+import "./Animations.css";
 
 var isClickScrolling = false;
 var scrollTimer = -1;
@@ -110,10 +111,10 @@ class App extends Component {
             </Link>
           </div>
 
-          <div id="aboutme" className="section">
+          <div id="aboutme" className="section initially_invisible">
             <About></About>
           </div>
-          <div id="workexperience" className="section">
+          <div id="workexperience" className="section initially_invisible">
             <WorkExperience></WorkExperience>
           </div>
           <div id="projects" className="section">

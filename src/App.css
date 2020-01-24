@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  background-image: radial-gradient(whitesmoke, lightgrey, grey);
-  color: light
+  background-image: radial-gradient(white, rgb(150, 150, 150));
+  color: black;
 }
 
 html {

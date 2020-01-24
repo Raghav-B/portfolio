@@ -4,6 +4,7 @@ import "../Section.css"
 import "./About.css"
 import GithubLogo from "./imgs/github1.svg";
 import LinkedInLogo from "./imgs/linkedin1.svg";
+import ScrollArrow from "./imgs/Scrollarrow.png";
  
 function About(props) {
   return (
@@ -11,16 +12,12 @@ function About(props) {
       <div className="section_container">
         <br/><br/>
         <h1>Raghav Bhardwaj</h1>
-
-        <div className="about_slide_showcase" align="right">
-          <Showcase></Showcase>
-        </div>
-
+        <br/><br/>
         <div className="about_body_text">
           Welcome!
           <br/><br/>
-          I am Raghav, a sophomore Computer Engineering student at the National University of Singapore,
-          and a receipient of the National Youth Achievement Award.
+          I am Raghav, a Computer Engineering sophomore at the National University of Singapore,
+          and a receipient of the National Youth Achievement Award from H.E. Madam President Halimah Yacob.
           <br/><br/>
           I love experimenting with new ideas and tech, and am constantly on the lookout for opportunities
           to better myself - <i>I believe that it is only after pushing ourselves beyond our limits that
@@ -45,10 +42,14 @@ function About(props) {
           </div>
         </div>
 
+        <div className="about_slide_showcase">
+          <Showcase></Showcase>
+        </div>
 
+        <div className="scroll_arrow">
+          <img src={ScrollArrow}></img>
+        </div>
       </div>
-      <div className="section_endline"></div>
-
     </div>
   )
 }
