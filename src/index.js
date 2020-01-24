@@ -7,8 +7,19 @@ import "./Animations.css";
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-var scroll = window.requestAnimationFrame ||
+var anim_callback = window.requestAnimationFrame ||
             function(callback){ window.setTimeout(callback, 1000/60)};
+
+var scrollPos = 0;
+var isScrollingDown = true;
+window.addEventListener("scroll", function(){
+  if ((document.body.getBoundingClientRect()).top > scrollPos) {
+    isScrollingDown = false;
+  } else {
+    isScrollingDown = true;
+  }
+  scrollPos = (document.body.getBoundingClientRect()).top;
+});
 
 loop();
 
@@ -16,27 +27,35 @@ function loop() {
     var elementsToShow = document.getElementsByClassName("initially_invisible");
   
     for (var i = 0; i < elementsToShow.length; i++) {
-      if (isElementInViewport(elementsToShow[i])) {
-        elementsToShow[i].classList.add("is_visible");
+      if (isScrollingDown == true) {
+        if (isElementInViewport(elementsToShow[i])) {
+          elementsToShow[i].classList.add("is_visible");
+        }
       } else {
-        elementsToShow[i].classList.remove("is_visible");
+        var rect_top = elementsToShow[i].getBoundingClientRect().top;
+        if (rect_top >= 0 + (window.innerHeight/2)) {
+          elementsToShow[i].classList.remove("is_visible");
+        }
       }
+      console.log("hm: " + scrollPos + elementsToShow[i].id + elementsToShow[i].getBoundingClientRect().top);
+      console.log(window.innerHeight);
     }
     
-    scroll(loop);
+    anim_callback(loop);
   }
-  
+
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
-      (rect.top <= 0
+      !(rect.top >= 0 + (window.innerHeight/2))
+      /*(rect.top <= 0
         && rect.bottom >= 0)
       ||
       (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.top <= (window.innerHeight || document.documentElement.clientHeight))
       ||
       (rect.top >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))*/
     );
   }
 

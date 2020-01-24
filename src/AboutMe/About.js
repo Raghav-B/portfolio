@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import Showcase from "./AboutShowcase.js";
 import "../Section.css"
 import "./About.css"
@@ -19,7 +19,8 @@ function About(props) {
           and a receipient of the National Youth Achievement Award from H.E. Madam President Halimah Yacob.
           <br/><br/>
           I love experimenting with new ideas and tech, and am constantly on the lookout for opportunities
-          to better myself - <i>I believe that it is only after pushing ourselves beyond our limits that
+          to better myself. To this end, I gain great satisfaction in pushing the envelope no matter
+          what I'm working on - <i>I believe that it is only after pushing ourselves beyond our limits that
           innovation takes place.</i>
           <br/><br/>
           Some of my areas of interest include:
