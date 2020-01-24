@@ -29,7 +29,7 @@ class App extends Component {
       var sectionArr = document.getElementsByClassName("section");
       for (var i = 0; i < sectionArr.length; i++) {
         const top = sectionArr[i].getBoundingClientRect().top;
-        if (top >= 0 && top <= window.innerHeight/2) {
+        if (top >= 0 && top <= window.innerHeight/1.5) {
           window.location.hash = sectionArr[i].id;
 
           var curSection = sectionArr[i].id+"_anchor";

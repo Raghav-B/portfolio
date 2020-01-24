@@ -4,7 +4,7 @@ import Thumbnail from '../Thumbnail.js'; // Import the Thumbnail component
 import '../App.css';
 import "../Thumbnail.css";
 import "../Section.css";
-import Showcase from "../Showcase.js";
+import Showcase from "../Showcase2.js";
  
 function Projects(props) {
     return (
