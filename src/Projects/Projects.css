@@ -9,30 +9,70 @@
 
 /* Create four equal columns that sits next to each other */
 .column {
-    flex: 31%;
-    max-width: 31%;
-    padding: 1%;
+    flex: 23vw;
+    max-width: 23vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
+.img_container {
     width: 100%;
-    padding: 2%;
+    height: auto;
+    margin: 1vw;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;}
+
+.project_image {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    object-fit: cover;
+    display: block;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 48%;
-        max-width: 48%;
+.project_text_panel {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    text-align: center;
+    background-color: black;
+    padding-bottom: 4%;
+    font-size: 1.86vh;
+}
+
+.project_body_text {
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.img_container:hover .project_image {
+    animation: project_image_hover 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.img_container:hover .project_text_panel {
+    animation: project_text_hover 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes project_text_hover {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
+@keyframes project_image_hover {
+    from {
+        transform: scale(1.0);
+        opacity: 1;
+    } to {
+        transform: scale(1.05);
+        opacity: 0.15;
     }
 }

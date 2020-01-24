@@ -29,9 +29,11 @@ class App extends Component {
   handleScroll() {
     if (isClickScrolling == false) {
       var sectionArr = document.getElementsByClassName("section");
+      
       for (var i = 0; i < sectionArr.length; i++) {
         const top = sectionArr[i].getBoundingClientRect().top;
-        if (top >= 0 && top <= window.innerHeight) {
+        
+        if (top >= -40 && top <= window.innerHeight) {
           window.location.hash = sectionArr[i].id;
 
           var curSection = sectionArr[i].id+"_anchor";
@@ -114,17 +116,17 @@ class App extends Component {
               id="contactme_anchor"
               className="content nav_bar_unselected" 
               onClick={(event) => this.navHighlight(event)} 
-              to="#contactme">Contact Me
+              to="#contactme">Contact
             </Link>
           </div>
 
-          <div id="aboutme" className="section initially_invisible">
+          <div id="aboutme" className="section">
             <About></About>
           </div>
-          <div id="education" className="section initially_invisible">
+          <div id="education" className="section">
             <Education></Education>
           </div>
-          <div id="workexperience" className="section initially_invisible">
+          <div id="workexperience" className="section">
             <WorkExperience></WorkExperience>
           </div>
           <div id="projects" className="section">

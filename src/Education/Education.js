@@ -1,16 +1,17 @@
-import React from "react"
-import "../Section.css"
+import React from "react";
+import "../Section.css";
 import UWCSEALogo from "./imgs/uwcsea_logo.png";
 import NUSLogo from "./imgs/nus_logo.png";
-import "./Education.css"
+import "./Education.css";
+import "../Animations.css";
  
 function Education(props) {
   return (
     <div align="center" >
       <div className="section_container">
-        <h1>Education</h1>
+        <h1 className="scroll_anim init_bottom">Education</h1>
 
-        <div className="education_panel">
+        <div className="education_panel scroll_anim init_left">
             <div className="logo_frame">
                 <img src={NUSLogo}></img>
             </div>
@@ -32,7 +33,7 @@ function Education(props) {
             </div>
         </div>
 
-        <div className="education_panel">
+        <div className="education_panel scroll_anim init_left">
             <div className="logo_frame">
                 <img src={UWCSEALogo}></img>
             </div>

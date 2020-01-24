@@ -3,14 +3,15 @@ import {BrowserRouter, Route, Link} from 'react-router-dom';
 import '../App.css';
 import "../Section.css";
 import "./WorkExperience.css";
+import "../Animations.css";
  
 function Projects(props) {
     return (
         <div className="section_container">
-            <h1>Work Experience</h1>
+            <h1 className="scroll_anim init_bottom">Work Experience</h1>
             
             <div>
-                <div className="experience_body_text">
+                <div className="experience_body_text scroll_anim init_left">
                     <h3>Captain / CTO, NUS RoboMaster</h3>
                     <h4>Nov 2019 - Present</h4>
                     The DJI RoboMaster Robotics Competition is annually held in Shenzhen, China. 
@@ -26,7 +27,7 @@ function Projects(props) {
                     it is very important that the team lays a strong foundation for the future 
                     NUS RoboMaster teams to come.
                 </div>
-                <div className="experience_showcase">
+                <div className="experience_showcase scroll_anim init_bottom">
                     <div className="experience_showcase_containerx3">
                         <figure>
                             <img src={require("./imgs/robomaster/2019_arena.jpg")}></img>
@@ -46,7 +47,7 @@ function Projects(props) {
             </div>
 
             <div>
-                <div className="experience_body_text">
+                <div className="experience_body_text scroll_anim init_left">
                     <h3>AI & Machine Learning Part-Timer, Panasonic R&D Center</h3>
                     <h4>Aug 2019 - Jan 2019</h4>
                     A project to design a system that is able to perform anomaly detection on the 
@@ -64,7 +65,7 @@ function Projects(props) {
                     as I analysed, cleaned and augmented months of data before using it to develop 
                     the anomaly detection system.
                 </div>
-                <div className="experience_showcase">
+                <div className="experience_showcase scroll_anim init_bottom">
                     <div className="experience_showcase_container">
                         <img src={require("./imgs/panasonic/anomaly_detection.png")}></img>
                     </div>
@@ -78,7 +79,7 @@ function Projects(props) {
             </div>
 
             <div>
-                <div className="experience_body_text">
+                <div className="experience_body_text scroll_anim init_left">
                     <h3>Teaching Assistant, NUS School of Computing</h3>
                     <h4>Aug 2019 - Dec 2019</h4>
                     Taught the C programming language to a class of 20 students taking the 
@@ -91,7 +92,7 @@ function Projects(props) {
                     modules to give students a more holistic understanding and innate intuition
                     of basic programming.
                 </div>
-                <div className="experience_showcase">
+                <div className="experience_showcase scroll_anim init_bottom">
                     <div className="experience_showcase_container">
                         <img src={require("./imgs/teaching_assistant/example_code.jpg")}></img>
                     </div>
@@ -104,7 +105,7 @@ function Projects(props) {
             </div>
 
             <div>
-                <div className="experience_body_text">
+                <div className="experience_body_text scroll_anim init_left">
                     <h3>Deep Learning Intern, Panasonic R&D Center</h3>
                     <h4>May 2019 - Aug 2019</h4>
                     An internship where I independently worked on a research project 
@@ -118,7 +119,7 @@ function Projects(props) {
                     reading textbooks, doing online courses and perusing research papers to
                     gain all the knowledge I needed to finish this project.
                 </div>
-                <div className="experience_showcase">
+                <div className="experience_showcase scroll_anim init_bottom">
                     <div className="experience_showcase_containerx3">
                         <figure>
                             <img src={require("./imgs/panasonic/full_detection_test.jpg")}></img>
@@ -137,7 +138,7 @@ function Projects(props) {
             </div>
 
             <div>
-                <div className="experience_body_text">
+                <div className="experience_body_text scroll_anim init_left">
                     <h3>Hardware Intern, Lemnis Technologies</h3>
                     <h4>Dec 2018 - Jan 2019</h4>
                     Lemnis Technologies is a start-up that designs specialized Virtual Reality 
@@ -154,7 +155,7 @@ function Projects(props) {
                     went along to fulfil deliverables under tight deadlines. This was very 
                     different from the structured nature of future internships.
                 </div>
-                <div className="experience_showcase">
+                <div className="experience_showcase scroll_anim init_bottom">
                     <div className="experience_showcase_containerx3">
                         <figure>
                             <img src={require("./imgs/lemnis/zed_mini.jpg")}></img>

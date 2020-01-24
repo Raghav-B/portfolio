@@ -5,15 +5,16 @@ import "./About.css"
 import GithubLogo from "./imgs/github1.svg";
 import LinkedInLogo from "./imgs/linkedin1.svg";
 import ScrollArrow from "./imgs/Scrollarrow.png";
- 
+import "../Animations.css"; 
+
 function About(props) {
   return (
     <div align="center" >
       <div className="section_container">
         <br/><br/>
-        <h1>Raghav Bhardwaj</h1>
+        <h1 className="scroll_anim init_invisible">Raghav Bhardwaj</h1>
         <br/>
-        <div className="about_body_text">
+        <div className="about_body_text scroll_anim init_left">
           <h2>Welcome!</h2>
           I am Raghav, a Computer Engineering sophomore at the National University of Singapore,
           and a receipient of the National Youth Achievement Award from H.E. Madam President Halimah Yacob.
@@ -26,6 +27,7 @@ function About(props) {
           Some of my areas of interest include:
           <li>AI & Deep Learning</li>
           <li>Robotics</li>
+          <li>Industrial Design & Rapid Prototyping</li>
           <li>Leadership & Volunteer Service</li>
           <li>Public Speaking & Pitching</li>
           <br/>
@@ -42,11 +44,11 @@ function About(props) {
           </div>
         </div>
 
-        <div className="about_slide_showcase">
+        <div className="about_slide_showcase scroll_anim init_right">
           <Showcase></Showcase>
         </div>
 
-        <div className="scroll_arrow">
+        <div className="scroll_arrow scroll_anim init_invisible">
           <img src={ScrollArrow}></img>
         </div>
       </div>

@@ -11,7 +11,7 @@ function ContactMe(props) {
         <BrowserRouter>
             <div className="section_container">
                 <br/><br/>
-                <h1>Contact Me</h1>
+                <h1>Contact Me!</h1>
                 
                 <br/>
                 <div className="contact_box">

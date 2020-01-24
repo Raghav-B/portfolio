@@ -24,40 +24,30 @@ window.addEventListener("scroll", function(){
 loop();
 
 function loop() {
-    var elementsToShow = document.getElementsByClassName("initially_invisible");
-  
-    for (var i = 0; i < elementsToShow.length; i++) {
-      if (isScrollingDown == true) {
-        if (isElementInViewport(elementsToShow[i])) {
-          elementsToShow[i].classList.add("is_visible");
-        }
-      } else {
-        var rect_top = elementsToShow[i].getBoundingClientRect().top;
-        if (rect_top >= 0 + (window.innerHeight/2)) {
-          elementsToShow[i].classList.remove("is_visible");
-        }
-      }
-      console.log("hm: " + scrollPos + elementsToShow[i].id + elementsToShow[i].getBoundingClientRect().top);
-      console.log(window.innerHeight);
-    }
-    
-    anim_callback(loop);
-  }
+  var elementsToShow = document.getElementsByClassName("scroll_anim");
 
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-      !(rect.top >= 0 + (window.innerHeight/2))
-      /*(rect.top <= 0
-        && rect.bottom >= 0)
-      ||
-      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-      ||
-      (rect.top >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))*/
-    );
+  for (var i = 0; i < elementsToShow.length; i++) {
+    if (isScrollingDown == true) {
+      if (isElementBelowViewport(elementsToShow[i])) {
+        elementsToShow[i].classList.add("is_visible");
+      }
+    } else {
+      var rect_top = elementsToShow[i].getBoundingClientRect().top;
+      if (!isElementBelowViewport(elementsToShow[i])) {
+        elementsToShow[i].classList.remove("is_visible");
+      }
+    }
   }
+  
+  anim_callback(loop);
+}
+
+function isElementBelowViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top < (0 + (window.innerHeight*0.95))
+  );
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
