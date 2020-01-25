@@ -1,5 +1,4 @@
 import React from 'react';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
 import '../App.css';
 import "../Section.css";
 import "./Awards.css";
@@ -68,7 +67,37 @@ function Awards(props) {
                     
                 </div>
             </div>
-        
+
+            <div className="award_panel scroll_anim init_right">
+                <div className="award_picture_frame">
+                    <img src={require("./imgs/NYAA.jpg")}></img>
+                </div>
+                <div className="award_body_text">
+                    <h3>National Youth Achievement Award - Gold</h3>
+                    <h4>November 2017</h4>
+                    Awarded by H.E. President Halimah Yacob and current Deupty Prime Minister Heng Swee
+                    Keat for demonstrating exceptional leadership abilities and contributing in 
+                    numerous volunteer service opportunities throughout High School.
+                    <br/><br/>
+                    I was also featured on the President’s Facebook page, Channel NewsAsia and 
+                    The Straits Times for planning and leading an edible garden project for 
+                    a fishing village in Bintan.
+                </div>
+            </div>
+
+            <div className="award_panel scroll_anim init_right">
+                <div className="award_picture_frame">
+                    <img src={require("./imgs/BSOM.png")}></img>
+                </div>
+                <div className="award_body_text">
+                    <h3>Best Soldier of the Month - SAF Military Police Command</h3>
+                    <h4>July 2017</h4>
+                    Awarded the Best Soldier of the Month Award and an additional Letter of 
+                    Commendation from the Commander of the Military Police Command for my
+                    exceptional performance and for demonstrating resilience under the 
+                    taxing environment of the Singapore Armed Forces Detention Barracks.
+                </div>
+            </div>
             
         </div>
     )

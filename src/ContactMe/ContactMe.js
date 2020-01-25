@@ -28,7 +28,15 @@ function ContactMe(props) {
                 <img className="contact_image scroll_anim init_right" src={require("./new_zealand.JPG")}></img>
             </div>
 
-            <br/><br/><br/><br/>
+            <br/><br/>
+
+            <i>I created this website from scratch and it marks my first attempt at a<br/>
+            proper project using React, so it will be frequently updated and improved!<br/>
+            <br/>
+            <a href="haha">You may view the source code for this site here!</a></i>
+
+            <br/><br/><br/>
+
         </div>
     )
 }

@@ -20,7 +20,7 @@ function About(props) {
         <div className="about_container">
           <div className="about_body_text scroll_anim init_left">
             <h2>Welcome!</h2>
-            I am Raghav, a Computer Engineering sophomore at the National University of Singapore,
+            I am Raghav, a 22-year old Computer Engineering sophomore at the National University of Singapore,
             and a receipient of the National Youth Achievement Award from H.E. Madam President Halimah Yacob.
             <br/><br/>
             I love experimenting with new ideas and tech, and am constantly on the lookout for opportunities

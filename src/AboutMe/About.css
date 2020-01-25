@@ -2,6 +2,7 @@
     display: flex;
     width: auto;
     margin: auto;
+    justify-content: center;
 }
 
 .about_body_text {
