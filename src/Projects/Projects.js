@@ -1,7 +1,5 @@
 import React from 'react';
-import Thumbnail from '../Thumbnail.js';
 import '../App.css';
-import "../Thumbnail.css";
 import "../Section.css";
 import "./Projects.css";
  
@@ -70,6 +68,23 @@ function Projects(props) {
                                 <img className="project_image" src={require("./imgs/slam_example.png")}></img>
                             </div>
                         </a>
+
+                        <a href="https://github.com/Raghav-B/dungeon-crawl">
+                            <div className="img_container">
+                                <div className="project_text_panel">
+                                    <h3>Dungeon Crawl - <br/> MMORPG that Gamifies Education</h3>
+                                    <div className="project_body_text">
+                                    A prototype RPG written in C# using the Unity3D engine in 
+                                    a team of 4 
+                                    during the IEEE Hackathon 2019. It gamifies quizzes input by 
+                                    teachers in the form of levels and rewards students’ progress with 
+                                    collectibles and boss fights.
+                                    </div>
+                                    <h3>Click to view on GitHub!</h3>
+                                </div>
+                                <img className="project_image" src={require("./imgs/boss_battle.png")}></img>
+                            </div>
+                        </a>
                     </div>
 
                     <div className="column scroll_anim init_bottom">
@@ -112,26 +127,9 @@ function Projects(props) {
                             </div>
                         </a>
                         
-                        <a href="https://github.com/Raghav-B/dungeon-crawl">
-                            <div className="img_container">
-                                <div className="project_text_panel">
-                                    <h3>Dungeon Crawl - <br/> MMORPG that Gamifies Education</h3>
-                                    <div className="project_body_text">
-                                    A prototype role-playing game written in C# using the Unity3D engine in 
-                                    a team of 4 
-                                    during the IEEE Hackathon 2019. The game gamifies quizzes input by 
-                                    teachers in the form of levels and rewards students’ progress with 
-                                    collectibles and boss fights.
-                                    </div>
-                                    <h3>Click to view on GitHub!</h3>
-                                </div>
-                                <img className="project_image" src={require("./imgs/boss_battle.png")}></img>
-                            </div>
-                        </a>
-                        
                         <div className="img_container">
                             <div className="project_text_panel">
-                                <h3>Digitrolley - Automated Inventory Management for SAF Medical Centers</h3>
+                                <h3>Digitrolley - Automated Inventory Management <br/>for SAF Medical Centers</h3>
                                 <div className="project_body_text">
                                 An automated inventory management system for emergency resuscitation 
                                 trolleys in Medical Centres in the Singapore Armed Forces (SAF). It aimed 

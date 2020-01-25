@@ -16,20 +16,22 @@ function Education(props) {
                 <img src={NUSLogo}></img>
             </div>
             <div className="education_body_text">
-                <h3>National University of Singapore - B.E. Computer Engineering, Honours</h3>
-                <h4>Aug 2018 - Present</h4>
-                Current Cumulative Average Point (CAP): <b>4.42/5.00</b>
-                <br/>Expected Date of Graduation: <b>May 2022</b>
-                <br/>
-                <br/>Relevant modules completed:
-                <li>Data Structures & Algorithms</li>
-                <li>Software Engineering & OOP</li>
-                <li>Real-time Operating Systems</li>
-                <li>Artificial Intelligence</li>
-                <li>Digital Design</li>
-                <li>Transistor-level Digital Circuits</li>
-                <li>Computer Organization</li>
-                <br/>
+                <div>
+                  <h3>National University of Singapore - B.E. Computer Engineering, Honours</h3>
+                  <h4>Aug 2018 - Present</h4>
+                  Current Cumulative Average Point (CAP): <b>4.42/5.00</b>
+                  <br/>Expected Date of Graduation: <b>May 2022</b>
+                  <br/>
+                  <br/>Relevant modules completed:
+                  <li>Data Structures & Algorithms</li>
+                  <li>Software Engineering & OOP</li>
+                  <li>Real-time Operating Systems</li>
+                  <li>Artificial Intelligence</li>
+                  <li>Digital Design</li>
+                  <li>Transistor-level Digital Circuits</li>
+                  <li>Computer Organization</li>
+                  <br/>
+                </div>
             </div>
         </div>
 

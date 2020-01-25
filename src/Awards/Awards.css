@@ -1,0 +1,39 @@
+.skill_bar_container {
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+    height: 50%;
+    margin: 3vh auto;
+    padding: 1.5%;
+}
+
+.skill_bar_column {
+    flex: 1;
+    color: whitesmoke;
+    text-align: left;
+    font-size: 1.5vh;
+}  
+
+.skill_bar {
+    padding: 1.5%;
+}
+
+.skill_bar_background {
+    display: block;
+    background-color: rgba(255,255,255,1);
+    margin: 0.5vh auto;
+    padding-top :2%;
+    width: 100%;
+    position: relative;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}  
+
+.skill_bar_progress {
+    position: absolute;
+    background-color: rgba(0,0,0,1);
+    padding-top: 2%;
+    top: 0px;
+    left: 0px;
+}
+

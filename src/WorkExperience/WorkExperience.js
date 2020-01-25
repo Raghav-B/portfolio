@@ -5,7 +5,7 @@ import "../Section.css";
 import "./WorkExperience.css";
 import "../Animations.css";
  
-function Projects(props) {
+function WorkExperience(props) {
     return (
         <div className="section_container">
             <h1 className="scroll_anim init_bottom">Work Experience</h1>
@@ -54,7 +54,7 @@ function Projects(props) {
                     operation of refrigerators and other machinery based on past and real-time data 
                     collected by their various sensors. 
                     <br/><br/>
-                    This required an unsupervised learning solution as there were no labels on \
+                    This required an unsupervised learning solution as there were no labels on
                     the data that could be used to train a classification machine learning 
                     system. Thus, I employed clustering analysis techniques to determine 
                     discrete classes in the data, along with time series analysis to infer 
@@ -174,8 +174,32 @@ function Projects(props) {
                     </div>
                 </div>
             </div>             
+
+            <div>
+                <div className="experience_body_text scroll_anim init_left">
+                    <h3>Military Policeman, Singapore Armed Forces Detection Barracks</h3>
+                    <h4>Feb 2017 - Aug 2018</h4>
+                    Managed the rehabilitation and incarceration of Military offenders during 22 months of
+                    compulsory National Service, and cultivated profound interpersonal communication, 
+                    conflict management and negotiation skills through daily interaction with detainees.
+                    <br/><br/>
+                    I was awarded the Best Soldier of the Month Award and an additional Letter of Commendation 
+                    from the Commander of the Military Police Command for exceptional performance and for
+                    demonstrating resilience under the Detention Barracks’ taxing environment.
+                </div>
+                <div className="experience_showcase scroll_anim init_bottom">
+                    <div className="experience_showcase_container">
+                        <img src={require("./imgs/national_service/milestone_parade.JPG")}></img>
+                    </div>
+                    <div className="experience_skills">
+                        <li>Leadership</li>
+                        <li>Conflict Management</li>
+                        <li>Resilience</li>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
  
-export default Projects;
+export default WorkExperience;

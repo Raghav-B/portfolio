@@ -3,6 +3,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import {NavHashLink as Link} from 'react-router-hash-link';
 import About from "./AboutMe/About.js";
 import Education from "./Education/Education.js";
+import Awards from "./Awards/Awards.js";
 import WorkExperience from "./WorkExperience/WorkExperience.js";
 import Projects from "./Projects/Projects.js";
 import Leadership from "./Leadership/Leadership.js";
@@ -86,37 +87,50 @@ class App extends Component {
               id="aboutme_anchor"
               className="content nav_bar_selected"
               onClick={(event) => this.navHighlight(event)}
-              to="#aboutme">About
+              to="#aboutme">
+                About
             </Link>
             <Link 
               id="education_anchor"
               className="content nav_bar_unselected"
               onClick={(event) => this.navHighlight(event)}
-              to="#education">Education
+              to="#education">
+                Education
+            </Link>
+            <Link 
+              id="awards_anchor"
+              className="content nav_bar_unselected"
+              onClick={(event) => this.navHighlight(event)}
+              to="#awards">
+                Skills & Awards
             </Link>
             <Link 
               id="workexperience_anchor"
               className="content nav_bar_unselected" 
               onClick={(event) => this.navHighlight(event)} 
-              to="#workexperience">Work Experience
+              to="#workexperience">
+                Work Experience
             </Link>
             <Link 
               id="projects_anchor"
               className="content nav_bar_unselected" 
               onClick={(event) => this.navHighlight(event)} 
-              to="#projects">Projects
+              to="#projects">
+                Projects
             </Link>
             <Link 
               id="leadership_anchor"
               className="content nav_bar_unselected" 
               onClick={(event) => this.navHighlight(event)} 
-              to="#leadership">Leadership
+              to="#leadership">
+                Leadership & Service
             </Link>
             <Link 
               id="contactme_anchor"
               className="content nav_bar_unselected" 
               onClick={(event) => this.navHighlight(event)} 
-              to="#contactme">Contact
+              to="#contactme">
+                Contact
             </Link>
           </div>
 
@@ -125,6 +139,9 @@ class App extends Component {
           </div>
           <div id="education" className="section">
             <Education></Education>
+          </div>
+          <div id="awards" className="section">
+            <Awards></Awards>
           </div>
           <div id="workexperience" className="section">
             <WorkExperience></WorkExperience>
