@@ -25,31 +25,51 @@ function Awards(props) {
                         percent="60%">
                     </ProgressBar>
                     <ProgressBar 
-                        skill="JavaScript | CSS | HTML"
+                        skill="JavaScript | CSS | HTML | ReactJS"
                         percent="30%">
+                    </ProgressBar>
+                    <ProgressBar 
+                        skill="Linux"
+                        percent="85%">
+                    </ProgressBar>
+                    <ProgressBar
+                        skill="Git | Gradle | TravisCI"
+                        percent="70%">
                     </ProgressBar>
                 </div>
 
                 <div className="skill_bar_column">
                     <ProgressBar 
                         skill="AI & Computer Vision: TensorFlow | Keras | OpenCV"
-                        percent="60%">
-                    </ProgressBar>
-                    <ProgressBar 
-                        skill="JavaScript | CSS | HTML"
-                        percent="30%">
-                    </ProgressBar>
-                    <ProgressBar 
-                        skill="Linux"
-                        percent="90%">
+                        percent="65%">
                     </ProgressBar>
                     <ProgressBar
-                        skill="Git | Gradle | TravisCI"
+                        skill="Embedded Systems Development: ARM | AVR"
                         percent="70%">
                     </ProgressBar>
+                    <ProgressBar 
+                        skill="Robot Operating System | freeRTOS"
+                        percent="50%">
+                    </ProgressBar>
+                    <ProgressBar 
+                        skill="3D App Development & Animation: Unity3D | Blender"
+                        percent="55%">
+                    </ProgressBar>
+                    <ProgressBar 
+                        skill="CAD Modelling: Fusion360 | Solidworks | NX PLM"
+                        percent="75%">
+                    </ProgressBar>
+                    <ProgressBar 
+                        skill="Miscellaneous: Photoshop | Illustrator | Premiere Pro"
+                        percent="75%">
+                    </ProgressBar>
+                    
+                    
                     
                 </div>
             </div>
+        
+            
         </div>
     )
 }

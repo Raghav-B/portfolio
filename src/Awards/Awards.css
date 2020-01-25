@@ -12,7 +12,7 @@
     flex: 1;
     color: whitesmoke;
     text-align: left;
-    font-size: 1.5vh;
+    font-size: 1.75vh;
 }  
 
 .skill_bar {
@@ -23,7 +23,7 @@
     display: block;
     background-color: rgba(255,255,255,1);
     margin: 0.5vh auto;
-    padding-top :2%;
+    padding-top: 2%;
     width: 100%;
     position: relative;
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);

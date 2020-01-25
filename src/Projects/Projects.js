@@ -143,6 +143,22 @@ function Projects(props) {
                             </div>
                             <img className="project_image" src={require("./imgs/innoventure_exploded_cad.png")}></img>
                         </div>
+
+                        <a href="https://www.longdom.org/open-access/the-ergonomic-development-of-video-game-controllers-2165-7556-1000209.pdf">
+                            <div className="img_container">
+                                <div className="project_text_panel">
+                                    <h3>Research on Ergonomic Development <br/>of Video-Game Controllers</h3>
+                                    <div className="project_body_text">
+                                    Published research on the analysis of the development of video game 
+                                    controllers over the last 25 years in terms of their ergonomics. 
+                                    Using this, I made predictions on the future of video game controller 
+                                    design and ergonomics.
+                                    </div>
+                                    <h3>Click to view research paper!</h3>
+                                </div>
+                                <img className="project_image" src={require("./imgs/controller_research.png")}></img>
+                            </div>
+                        </a>
                     </div>
 
                     <div className="column scroll_anim init_right">
