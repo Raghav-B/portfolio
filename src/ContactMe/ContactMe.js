@@ -6,17 +6,30 @@ import "./ContactMe.css";
  
 function ContactMe(props) {
     return (
-        <BrowserRouter>
-            <div className="section_container">
-                <h1 className="scroll_anim init_bottom">Contact Me!</h1>
-                
-                <br/>
-                <div className="contact_box">
-                    Hi there!
-                </div>
+        <div className="section_container">
+            <h1 className="scroll_anim init_bottom">Contact Me</h1>
+            
+            <div className="contact_container">
+                <div className="contact_body_text scroll_anim init_right">
+                    I am always on the lookout for new and interesting opportunities! 
+                    Please feel free to contact me by email or phone.<br/> 
+                    <br/>
+                    I look forward to talking to you!<br/>
+                    <br/>
+                    
+                    <b>Email</b><br/>
+                    raghavbhardwaj@u.nus.edu<br/>
+                    <br/>
+                    <b>Phone</b><br/>
+                    +65 96270794<br/>
+                    <br/>
 
+                </div>
+                <img className="contact_image scroll_anim init_right" src={require("./new_zealand.JPG")}></img>
             </div>
-        </BrowserRouter>
+
+            <br/><br/><br/><br/>
+        </div>
     )
 }
  

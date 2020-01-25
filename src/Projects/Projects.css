@@ -1,11 +1,6 @@
-.main_flex_container {
-    display: inline-block;
-}
-
 .row {
     display: flex;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: auto;
     justify-content: center;
 }
 
