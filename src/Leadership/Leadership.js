@@ -51,11 +51,8 @@ function Leadership(props) {
                                 welfare-related issues the cohort might be facing. 
                                 <br/><br/>
                                 Later elected as the General Secretary of the USC in September 2019 in addition to my
-                                role as a cohort representative to represent the USC in working with external agents 
-                                for planning career and internship fairs, community service opportunities, 
-                                and managing all administrative matters within the USC.
-                                <br/><br/>
-                                Was also involved with emceeing for various events such as the annual Freshman Party.
+                                role as a cohort representative. Was also involved with emceeing for various events 
+                                such as the annual Freshman Party.
                                 </div>
                             </div>
                             <img className="project_image" src={require("./imgs/freshman_emcee.JPG")}></img>

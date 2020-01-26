@@ -1,13 +1,14 @@
 .row {
     display: flex;
     margin: auto;
+    width: 90%;
     justify-content: center;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
     flex: 1;
-    max-width: 40%;
+    max-width: auto;
     margin-right: 1vw;
     margin-left: 1vw;
 }

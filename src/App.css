@@ -1,8 +1,37 @@
-.App {
-  text-align: center;
-  background-image: radial-gradient(white, rgb(100, 100, 100));
-  color: black;
-  font-size: medium;
+@media (max-width: 1000px) {
+  .App {
+    text-align: center;
+    background-image: radial-gradient(white, rgb(100, 100, 100));
+    color: black;
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+  .App {
+    text-align: center;
+    background-image: radial-gradient(white, rgb(100, 100, 100));
+    color: black;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 1800px) {
+  .App {
+    text-align: center;
+    background-image: radial-gradient(white, rgb(100, 100, 100));
+    color: black;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1801px) {
+  .App {
+    text-align: center;
+    background-image: radial-gradient(white, rgb(100, 100, 100));
+    color: black;
+    font-size: 16px;
+  }
 }
 
 html {
@@ -31,7 +60,6 @@ html {
 .nav_bar a {
   text-decoration: none;
   display:inline-table;
-  font-size: medium;
   text-align: center;
   font-weight: 750;
   padding-left: 30px;
