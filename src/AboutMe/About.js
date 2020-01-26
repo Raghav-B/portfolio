@@ -53,7 +53,7 @@ function About(props) {
           </div>
         </div>
 
-        <h3>Scroll down for more</h3>
+        <h3 className="scroll_anim init_invisible">Scroll down for more</h3>
 
         <BrowserRouter>
           <div className="scroll_arrow scroll_anim init_invisible">
