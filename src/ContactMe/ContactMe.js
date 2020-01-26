@@ -14,7 +14,7 @@ function ContactMe(props) {
                     I am always on the lookout for new and interesting opportunities! 
                     Please feel free to contact me by email or phone.<br/> 
                     <br/>
-                    I look forward to talking to you!<br/>
+                    I look forward to hearing from you!<br/>
                     <br/>
                     
                     <b>Email</b><br/>
@@ -31,9 +31,9 @@ function ContactMe(props) {
             <br/><br/>
 
             <i>I created this website from scratch and it marks my first attempt at a<br/>
-            proper project using React, so it will be frequently updated and improved!<br/>
+            proper project using React, so it will be frequently updated and improved.<br/>
             <br/>
-            <a href="haha">You may view the source code for this site here!</a></i>
+            <a href="https://github.com/Raghav-B/portfolio">You may view the source code for this site here.</a></i>
 
             <br/><br/><br/>
 

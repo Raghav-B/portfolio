@@ -7,9 +7,10 @@ function Projects(props) {
     return (
         <div className="section_container">
             <h1 className="scroll_anim init_bottom">Projects</h1>
+            <div className="scroll_anim init_top">Hover over images to learn more.</div>
+            <br/><br/>
 
             <div className="row">
-
                 <div className="column scroll_anim init_left">
                     <a href="https://github.com/Raghav-B/poke.AI">
                         <div className="img_container">
@@ -22,7 +23,7 @@ function Projects(props) {
                                 environment together with a Deep Q Learning network for learning the Pokemon 
                                 battle system.
                                 </div>
-                                <h3>Click to view on GitHub!</h3>
+                                <h3>Click to view on GitHub</h3>
                             </div>
                             <img className="project_image" src={require("./imgs/poke.ai.png")}></img>
                         </div>
@@ -41,7 +42,7 @@ function Projects(props) {
                                 on amplitude, a real-time music visualizer with simulated physics, and an
                                 accurate frequency detector.
                                 </div>
-                                <h3>Click to view on GitHub!</h3>
+                                <h3>Click to view on GitHub</h3>
                             </div>
                             <img className="project_image" src={require("./imgs/fpga_wave_detection.jpg")}></img>
                         </div>
@@ -62,7 +63,7 @@ function Projects(props) {
                                 surroundings, with a small camera to perform autonomous feature 
                                 detection using OpenCV independent of the client.
                                 </div>
-                                <h3>Click to view on GitHub!</h3>
+                                <h3>Click to view on GitHub</h3>
                             </div>
                             <img className="project_image" src={require("./imgs/slam_example.png")}></img>
                         </div>
@@ -79,14 +80,14 @@ function Projects(props) {
                                 teachers in the form of levels and rewards students’ progress with 
                                 collectibles and boss fights.
                                 </div>
-                                <h3>Click to view on GitHub!</h3>
+                                <h3>Click to view on GitHub</h3>
                             </div>
                             <img className="project_image" src={require("./imgs/boss_battle.png")}></img>
                         </div>
                     </a>
                 </div>
 
-                <div className="column scroll_anim init_bottom">
+                <div className="column scroll_anim init_right">
                     <a href="https://github.com/Raghav-B/cctv-crash-detector">
                         <div className="img_container">
                             <div className="project_text_panel">
@@ -98,7 +99,7 @@ function Projects(props) {
                                 track detected vehicles and their estimated velocity vectors across 
                                 consecutive frames. 
                                 </div>
-                                <h3>Click to view on GitHub!</h3>
+                                <h3>Click to view on GitHub</h3>
                             </div>
                             <img className="project_image" src={require("./imgs/cctv_crash_detector_ui.png")}></img>
                         </div>
@@ -120,7 +121,7 @@ function Projects(props) {
                                 integration testing with TravisCI to ensure stability of application 
                                 through all stages of development.
                                 </div>
-                                <h3>Click to view on GitHub!</h3>
+                                <h3>Click to view on GitHub</h3>
                             </div>
                             <img className="project_image" src={require("./imgs/eggventory_ui.png")}></img>
                         </div>
@@ -150,10 +151,8 @@ function Projects(props) {
                                 <div className="project_body_text">
                                 Published research on the analysis of the development of video game 
                                 controllers over the last 25 years in terms of their ergonomics. 
-                                Using this, I made predictions on the future of video game controller 
-                                design and ergonomics.
                                 </div>
-                                <h3>Click to view research paper!</h3>
+                                <h3>Click to view research paper</h3>
                             </div>
                             <img className="project_image" src={require("./imgs/controller_research.png")}></img>
                         </div>
@@ -192,7 +191,7 @@ function Projects(props) {
                                 Our team cleared the maze in the fastest time amongst the other teams’ 
                                 robots, passing all the challenges with 0 collisions.
                                 </div>
-                                <h3>Click to view on GitHub!</h3>
+                                <h3>Click to view on GitHub</h3>
                             </div>
                             <img className="project_image" src={require("./imgs/video_frame.png")}></img>
                         </div>

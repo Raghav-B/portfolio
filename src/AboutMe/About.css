@@ -6,10 +6,9 @@
 }
 
 .about_body_text {
-    width: 40%;
+    width: 35%;
     height: auto;
     text-align: left;
-    font-size: 1.5vh;
     background-color: rgba(0, 0, 0, 0.5);
     padding-left: 2%;
     padding-right: 2%;
@@ -83,7 +82,7 @@
 
 .scroll_arrow img{
     animation: scroll_arrow_float infinite 2s linear;
-    margin: 10vh;
+    margin: 3vh;
     width: 5vw;
     opacity: 1;
 }

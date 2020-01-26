@@ -70,15 +70,40 @@ function Awards(props) {
 
             <div className="award_panel scroll_anim init_right">
                 <div className="award_picture_frame">
-                    <img src={require("./imgs/NYAA.jpg")}></img>
+                    <img src={require("./imgs/judges_choice.jpg")}></img>
+                </div>
+                <div className="award_body_text">
+                    <h3>Google Judge's Choice Award for NUS Orbital 2019</h3>
+                    <h4>August 2019</h4>
+                    NUS Orbital is a self-initiated project offered by the School of Computing that lasts an
+                    entire summer. In 2019, 200+ different projects were being worked on over the summer, leading
+                    up to a showcase where all the projects were displayed for the public to browse.
+                    <br/><br/>
+                    My project, an AI that could learn to play Pokemon, won the Judge's Choice Award
+                    sponsored by Google for its high technical level. It involved using a Convolutional
+                    Neural Network together with algorithms from Robotics for mapping the in-game environment,
+                    and a Deep Q Learning network to learn the battle system.
+                </div>
+            </div>
+
+            <div className="award_panel scroll_anim init_right">
+                <div className="award_showcase">
+                    <div className="award_showcase_container">
+                        <video autoplay="autoplay" muted="muted" loop="loop"
+                            src={require("./imgs/cna_interview.mp4")}></video>
+                        <img src={require("./imgs/nyaa_straits_times.jpg")}></img>
+                        <img src={require("./imgs/NYAA.jpg")}></img>
+                        <video autoplay="autoplay" muted="muted" loop="loop"
+                            src={require("./imgs/cna_interview.mp4")}></video>
+                    </div>
                 </div>
                 <div className="award_body_text">
                     <h3>National Youth Achievement Award - Gold</h3>
                     <h4>November 2017</h4>
-                    Awarded by H.E. President Halimah Yacob and current Deupty Prime Minister Heng Swee
+                    Awarded by H.E. President Halimah Yacob and current Deputy Prime Minister Heng Swee
                     Keat for demonstrating exceptional leadership abilities and contributing in 
-                    numerous volunteer service opportunities throughout High School.
-                    <br/><br/>
+                    numerous volunteer service opportunities throughout High School.<br/>
+                    <br/>
                     I was also featured on the President’s Facebook page, Channel NewsAsia and 
                     The Straits Times for planning and leading an edible garden project for 
                     a fishing village in Bintan.

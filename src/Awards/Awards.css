@@ -12,7 +12,6 @@
     flex: 1;
     color: whitesmoke;
     text-align: left;
-    font-size: 1.75vh;
 }  
 
 .skill_bar {
@@ -41,14 +40,13 @@
     display: flex;
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 90%;
     margin: 3vh auto;
 }
 
 .award_picture_frame {
     width: 50%;
     margin: 0;
-
 }
 
 .award_picture_frame img {
@@ -58,10 +56,47 @@
 
 .award_body_text {
     background-color: rgba(0, 0, 0, 0.45);
-    font-size: 1.75vh;
     width: 100%;
     padding-left: 1.5%;
     padding-right: 1.5%;
+    padding-bottom: 1.5%;
     text-align: left;
     color: whitesmoke;
+}
+
+.award_showcase {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 0;
+}
+
+.award_showcase_container {
+    width: 400%;
+    height: 100%;
+    position: relative;
+    animation: 10s award_animation infinite;
+    margin: 0;
+    left: 0;
+    text-align: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.award_showcase_container img, video {
+    float: left;
+    width: 25%;
+}
+
+@keyframes award_animation {
+    0% { left: 0%; }
+    25% { left: 0%; }
+    30% { left: -100%; }
+    55% { left: -100%; }
+    60% { left: -200%; }
+    85% { left: -200%; }
+    90% { left: -300%; }
+    100% { left: -300%; }
 }

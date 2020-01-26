@@ -20,10 +20,11 @@
 
 .education_body_text {
     background-color: rgba(0, 0, 0, 0.45);
-    font-size: 1.5vh;
     width: 100%;
+    height: auto;
     padding-left: 1.5%;
     padding-right: 1.5%;
+    padding-bottom: 1.5%;
     text-align: left;
     color: whitesmoke;
 }

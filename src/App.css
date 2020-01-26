@@ -2,6 +2,7 @@
   text-align: center;
   background-image: radial-gradient(white, rgb(100, 100, 100));
   color: black;
+  font-size: medium;
 }
 
 html {

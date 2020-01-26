@@ -8,6 +8,8 @@ function Leadership(props) {
     return (
         <div className="section_container">
             <h1 className="scroll_anim init_bottom">Leadership & Volunteer Service</h1>
+            <div className="scroll_anim init_top">Hover over images to learn more.</div>
+            <br/><br/>
 
             <div className="main_flex_container">
                 <div className="row">
@@ -28,7 +30,7 @@ function Leadership(props) {
 
                         <div className="img_container">
                             <div className="project_text_panel">
-                                <h3>Head of Publicity, Engineering Freshman Orientation Camp</h3>
+                                <h3>Head of Publicity, <br/>Engineering Freshman Orientation Camp</h3>
                                 <div className="project_body_text">
                                 Marketed the annual freshman camp through Instagram and Facebook to incoming freshmen
                                 to garner a turnout of about 200 participants. Apart from shaping promotional materials 
@@ -63,7 +65,7 @@ function Leadership(props) {
                     <div className="column scroll_anim init_right">
                         <div className="img_container">
                             <div className="project_text_panel">
-                                <h3>Singapore Computer Society AI & Innovation Challenge 2019</h3>
+                                <h3>Singapore Computer Society <br/>AI & Innovation Challenge 2019</h3>
                                 <div className="project_body_text">
                                 While developing the CCTV Traffic Accident detector in a team of 3, I was also involved
                                 with pitching our project to a panel of judges consisting of industry professionals working
@@ -78,7 +80,7 @@ function Leadership(props) {
     
                         <div className="img_container">
                             <div className="project_text_panel">
-                                <h3>Frontend Web Development Tutor, Ulu Pandan Star Tuition</h3>
+                                <h3>Frontend Web Development Tutor, <br/> Ulu Pandan Star Tuition</h3>
                                 <div className="project_body_text">
                                 Tutored a group of 10 Primary School students on web development using HTML, 
                                 CSS, and JavaScript on behalf of the NUS School of Computing.
