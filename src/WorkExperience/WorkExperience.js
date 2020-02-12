@@ -141,14 +141,14 @@ function WorkExperience(props) {
                 <div className="experience_body_text scroll_anim init_left">
                     <h3>Hardware Intern, Lemnis Technologies</h3>
                     <h4>Dec 2018 - Jan 2019</h4>
-                    Lemnis Technologies is a start-up that designs specialized Virtual Reality 
-                    headsets to combat motion sickness and to make the experience more immersive 
-                    and comfortable for users.
+                    Lemnis Technologies is a start-up that designs specialized Mixed and Virtual 
+                    Reality headsets that combat motion sickness and enable a whole host of 
+                    immersive experiences for professional uses.
                     <br/><br/>
                     I was involved in a variety of roles ranging from building and programming 
-                    a 6-degree-of-freedom robotic arm for the testing of VR headsets, writing 
+                    a 6-degree-of-freedom robotic arm for the testing of the headsets, writing 
                     software flashing of firmware to the headsets, and even designing custom 
-                    attachments for augmenting VR headsets with stereo vision capabilities.
+                    attachments for augmenting the headsets with stereo vision capabilities.
                     <br/><br/>
                     I especially enjoyed the dynamic work environment at Lemnis Technologies 
                     where I had to rely on multidisciplinary skills and needed to learn as I 
