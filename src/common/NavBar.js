@@ -3,10 +3,6 @@ import { NavHashLink as Link } from 'react-router-hash-link';
 
 function NavBar(props) {
 
-    const aboutMeButton = useRef(null);
-
-    console.log(aboutMeButton);
-
     const navHighlight = (event) => {
         // isClickScrolling = true;
 
@@ -30,6 +26,7 @@ function NavBar(props) {
                     width: "100%",
                     paddingTop: "1%",
                     paddingBottom: "1%",
+                    backgroundColor: "#E6E6E6"
                 }}>
                 H
             </div>
@@ -41,53 +38,47 @@ function NavBar(props) {
                     width: "100%",
                     height: "2%",
                     position: "fixed",
-                    zIndex: 1,
+                    zIndex: 5,
                     top: 0,
                     left: 0,
                     textAlign: "center",
-                    backgroundColor: "#FFFFFF",
+                    backgroundColor: "white",
                     paddingTop: "1%",
                     paddingBottom: "1%"
                 }}>
                 <Link
                     style={navBarTextStyle}
                     to="#aboutme"
-                    ref={aboutMeButton}
                 >
                     About Me
                 </Link>
                 <Link
                     style={navBarTextStyle}
                     to="#aboutme"
-                    ref={aboutMeButton}
                 >
                     Work Experience
                 </Link>
                 <Link
                     style={navBarTextStyle}
                     to="#aboutme"
-                    ref={aboutMeButton}
                 >
                     Education
                 </Link>
                 <Link
                     style={navBarTextStyle}
                     to="#aboutme"
-                    ref={aboutMeButton}
                 >
                     Skill Toolbox
                 </Link>
                 <Link
                     style={navBarTextStyle}
                     to="#aboutme"
-                    ref={aboutMeButton}
                 >
                     Projects & More
                 </Link>
                 <Link
                     style={navBarTextStyle}
                     to="#aboutme"
-                    ref={aboutMeButton}
                 >
                     In the Press
                 </Link>

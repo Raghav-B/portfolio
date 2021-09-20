@@ -16,14 +16,16 @@ function About(props) {
       flexDirection: "column",
       alignItems: "center",
       width: "100%",
+      zIndex: 1
     }}>
-      <h1
+      <div
         style={{
-          marginTop: "5%"
+          fontSize: "50px",
+          marginTop: "3%",
         }}
       >
         Raghav Bhardwaj
-      </h1>
+      </div>
 
       <ImageSlider></ImageSlider>
     </div>

@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { NavHashLink as Link } from 'react-router-hash-link';
+import NavBar from './common/NavBar.js';
 import About from "./components/About.js";
+import Doodles from "./components/Doodles.js";
+
 import Education from "./Education/Education.js";
 import Awards from "./Awards/Awards.js";
 import WorkExperience from "./WorkExperience/WorkExperience.js";
@@ -10,32 +13,55 @@ import Leadership from "./Leadership/Leadership.js";
 import ContactMe from "./ContactMe/ContactMe.js";
 import './App.css';
 import "./Animations.css";
-import NavBar from './common/NavBar.js';
 
 var isClickScrolling = false;
 var scrollTimer = -1;
 
 function App() {
 
+  const mainRef = useRef(null);
+  const [mainHeight, setMainHeight] = useState(window.innerHeight);
+
+  useEffect(() => {
+    setMainHeight(mainRef.current.offsetHeight);
+  }, []);
+
   return (
     <BrowserRouter>
 
+      <Doodles
+        mainHeight={mainHeight}
+      />
       <NavBar></NavBar>
 
-      <div style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        fontFamily: "JosefinSans",
-        fontWeight: 200,
-        backgroundColor: "#E6E6E6",
-        height: "100%",
-        width: "100%"
-      }}>
+      <div
+        ref={mainRef}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          fontFamily: "JosefinSans",
+          backgroundColor: "#E6E6E6",
+          fontWeight: 200,
+          width: "100%",
+          height: "100%"
+        }}>
 
-        <div id="aboutme">
-          <About></About>
-        </div>
+        <About></About>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
+
         {/* <div id="education" className="section">
           <Education></Education>
         </div>
