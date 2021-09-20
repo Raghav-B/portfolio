@@ -62,22 +62,10 @@
     overflow: hidden;
 }
 
-.about_showcase_sliding_region img {
-    float: left;
-    width: 20%;
-    height: auto;
-}
 
 @keyframes slide_animation {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
+    0% { transform: translate(0%) }
+    100% { transform: translate(-100%) }
 }
 
 .scroll_arrow img{
