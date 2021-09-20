@@ -8,6 +8,7 @@ import React from "react";
 // import { BrowserRouter, Route } from 'react-router-dom';
 // import { NavHashLink as Link } from 'react-router-hash-link';
 import ImageSlider from "./ImageSlider.js";
+import RoleSlider from "./RoleSlider.js";
 
 function About(props) {
   return (
@@ -15,6 +16,7 @@ function About(props) {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
+      justifyContent: "center",
       width: "100%",
       zIndex: 1
     }}>
@@ -27,6 +29,7 @@ function About(props) {
         Raghav Bhardwaj
       </div>
 
+      <RoleSlider></RoleSlider>
       <ImageSlider></ImageSlider>
     </div>
 

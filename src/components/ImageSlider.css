@@ -16,7 +16,7 @@
 .slideImg:hover {
     animation: slideImgHover 0.25s ease-out;
     animation-fill-mode: forwards;
-}
+}   
 
 .slideText:hover {
     animation: slideTextHover 0.25s ease-out;
