@@ -18,10 +18,26 @@
     animation-fill-mode: forwards;
 }
 
+.slideText:hover {
+    animation: slideTextHover 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
 @keyframes slideImgHover {
     from {
         transform: scale(1.0);
+        z-index: 1;
     } to {
         transform: scale(1.2);
+        z-index: 3;
     }
 }
+
+@keyframes slideTextHover {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+

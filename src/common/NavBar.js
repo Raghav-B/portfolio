@@ -91,7 +91,6 @@ const navBarTextStyle = {
     textDecoration: "none",
     color: "black",
     fontFamily: "JosefinSans",
-    fontWeight: 200,
     fontSize: 20
 }
 
