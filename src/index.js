@@ -3,14 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import "./Animations.css";
-import WebFont from 'webfontloader';
 
-// WebFont.load({
-//   google: {
-//     families: ['Josefin Sans']
-//   }
-// });
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // var anim_callback = window.requestAnimationFrame ||

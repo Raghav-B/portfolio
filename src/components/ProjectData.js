@@ -31,7 +31,7 @@ export const projectData = [
     },
     {
         title: "AI & ML",
-        flavorText: <div>Projects involving <b>Neural Networks</b>, <b>Object Detection</b> and <b>Reinforcement Learning</b> using <b>TensorFlow</b>, <b>Keras</b>, <b>OpenCV</b>, etc.</div>,
+        flavorText: <div>Projects involving <b>Neural Networks</b>, <b>Object Detection</b>, <b>Reinforcement Learning</b> and more using <b>TensorFlow</b>, <b>Keras</b>, <b>OpenCV</b>, etc.</div>,
         img: require("../imgs/Projects/AIML.jpg"),
         projects: [
             {
@@ -55,7 +55,7 @@ export const projectData = [
     },
     {
         title: "IOT",
-        flavorText: "",
+        flavorText: <div>Hardware-focused projects </div>,
         img: require("../imgs/Projects/IOT.png"),
         projects: [
             {

@@ -204,6 +204,7 @@
 }
 .vertical-timeline-element-content li {
     margin-bottom: 1%;
+    /* font-size: 20px; */
 }
 .vertical-timeline-element-content .vertical-timeline-element-date {
     display: inline-block;

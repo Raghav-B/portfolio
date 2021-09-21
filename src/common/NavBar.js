@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import { NavHashLink as Link } from 'react-router-hash-link';
 
 function NavBar(props) {
 
@@ -26,7 +25,7 @@ function NavBar(props) {
                     width: "100%",
                     paddingTop: "1%",
                     paddingBottom: "1%",
-                    backgroundColor: "#E6E6E6"
+                    backgroundColor: "#E6E6E6",
                 }}>
                 H
             </div>
@@ -44,45 +43,48 @@ function NavBar(props) {
                     textAlign: "center",
                     backgroundColor: "white",
                     paddingTop: "1%",
-                    paddingBottom: "1%"
+                    paddingBottom: "1%",
+                    borderBottomColor: "black",
+                    borderBottomWidth: "1px",
+                    borderBottomStyle: "solid"
                 }}>
-                <Link
+                <div
                     style={navBarTextStyle}
                     to="#aboutme"
                 >
                     About Me
-                </Link>
-                <Link
+                </div>
+                <div
                     style={navBarTextStyle}
                     to="#aboutme"
                 >
                     Projects
-                </Link>
-                <Link
+                </div>
+                <div
                     style={navBarTextStyle}
                     to="#aboutme"
                 >
                     Work Experience
-                </Link>
-                <Link
+                </div>
+                <div
                     style={navBarTextStyle}
                     to="#aboutme"
                 >
                     Education
-                </Link>
-                {/* <Link
+                </div>
+                {/* <div
                     style={navBarTextStyle}
                     to="#aboutme"
                 >
                     Skill Toolbox
-                </Link> */}
+                </div> */}
 
-                <Link
+                <div
                     style={navBarTextStyle}
                     to="#aboutme"
                 >
                     In the Press
-                </Link>
+                </div>
             </div>
         </div>
     );

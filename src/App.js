@@ -1,18 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { NavHashLink as Link } from 'react-router-hash-link';
 import Doodles from "./components/Doodles.js";
 import NavBar from './common/NavBar.js';
 import About from "./components/About.js";
 import WorkExperience from './components/WorkExperience.js';
 import Projects from './components/Projects.js';
-
-import Education from "./Education/Education.js";
-import Awards from "./Awards/Awards.js";
-import Leadership from "./Leadership/Leadership.js";
-import ContactMe from "./ContactMe/ContactMe.js";
 import './App.css';
-import "./Animations.css";
 
 var isClickScrolling = false;
 var scrollTimer = -1;
@@ -47,7 +40,7 @@ function App() {
           height: "100%"
         }}>
 
-        {/* <About></About> */}
+        <About></About>
         <Projects></Projects>
         <WorkExperience></WorkExperience>
 
