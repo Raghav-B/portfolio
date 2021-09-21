@@ -22,7 +22,7 @@ function NavBar(props) {
         <div>
             <div
                 style={{
-                    height: "2%",
+                    height: "25px",
                     width: "100%",
                     paddingTop: "1%",
                     paddingBottom: "1%",
@@ -36,7 +36,7 @@ function NavBar(props) {
                     justifyContent: "space-evenly",
                     alignItems: "center",
                     width: "100%",
-                    height: "2%",
+                    height: "25px",
                     position: "fixed",
                     zIndex: 5,
                     top: 0,
@@ -56,6 +56,12 @@ function NavBar(props) {
                     style={navBarTextStyle}
                     to="#aboutme"
                 >
+                    Projects
+                </Link>
+                <Link
+                    style={navBarTextStyle}
+                    to="#aboutme"
+                >
                     Work Experience
                 </Link>
                 <Link
@@ -64,18 +70,13 @@ function NavBar(props) {
                 >
                     Education
                 </Link>
-                <Link
+                {/* <Link
                     style={navBarTextStyle}
                     to="#aboutme"
                 >
                     Skill Toolbox
-                </Link>
-                <Link
-                    style={navBarTextStyle}
-                    to="#aboutme"
-                >
-                    Projects & More
-                </Link>
+                </Link> */}
+
                 <Link
                     style={navBarTextStyle}
                     to="#aboutme"

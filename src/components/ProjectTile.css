@@ -1,0 +1,105 @@
+.projectTileText {
+    opacity: 1;
+}
+
+.modalBackButton:hover {
+    cursor: pointer;
+    animation: backAnimation 0.1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.modalBackButton {
+    transform: scale(-1);
+    max-width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    cursor: auto;
+}
+
+@keyframes backAnimation {
+    from {
+        transform: scale(-1);
+    } to {
+        transform: scale(-1.3);
+    }
+}
+
+.projectTileImg {
+    /* max-width: 300px; */
+    /* min-height: 200px;
+    max-height: 200px;
+    width: auto; */
+    max-width:110%;
+    /* min-height: 200px; */
+    height:auto;
+    /* height: "100%"; */
+    /* filter: blur(2px); */
+    
+}
+
+.projectTile:hover {
+    animation: projectTileAnimation 0.1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.projectTile:hover .projectTileText {
+    animation: projectTileTextAnimation 0.1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+.projectTile:hover .projectTileImg {
+    animation: projectTileImgAnimation 0.1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes projectTileTextAnimation {
+    from { 
+        opacity: 1; 
+        cursor: auto;
+    }
+    to { 
+        opacity: 0; 
+        cursor: pointer;
+    }
+}
+
+@keyframes projectTileImgAnimation {
+    from { 
+        transform: scale(1,1);
+        /* filter: blur(2px) */
+    }    
+    to { 
+        transform: scale(0.95,0.95);
+        /* filter: blur(0px) */
+    }
+}
+
+@keyframes projectTileAnimation {
+    from { 
+        /* transform: scale(1); */
+        /* filter: blur(2px) */
+    }    
+    to { 
+        /* transform: scale(1.05); */
+        /* filter: blur(0px) */
+    }
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 150ms ease-out;
+    /* transition: opacity 500ms ease-out; */
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+    transform: translateY(100%);
+}

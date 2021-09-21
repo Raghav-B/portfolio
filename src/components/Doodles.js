@@ -29,7 +29,7 @@ function Doodles(props) {
 
     const handleParallax = () => {
         let scrollValue = window.pageYOffset;
-        bgRef.current.style.transform = "translateY(" + (-scrollValue / 3) + "px";
+        bgRef.current.style.transform = "translateY(" + (-scrollValue / 2) + "px";
     }
 
     useEffect(() => {
@@ -70,7 +70,7 @@ function Doodles(props) {
                             minHeight: "0px",
                             width: `${Math.round(windowWidth * 0.2)}px`,
                         }}
-
+                        draggable="false"
                     />
                 })
             }

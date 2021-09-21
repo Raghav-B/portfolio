@@ -62,10 +62,13 @@
   font-weight: lighter;
 } */
 
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 
+b {
+  color: #2194f3;
+}
 .section {
   padding-top: 40px;
   margin-top: -40px;
