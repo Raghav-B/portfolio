@@ -1,3 +1,61 @@
 .grid-img.lightbox-enabled {
     cursor: pointer;
 }
+
+.grid-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-img-text-panel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    opacity: 0;
+    font-size: 15px;
+    text-align: center;
+    padding: 5%;
+    /* z-index: 0; */
+}
+
+.grid-img-text {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.grid-img-container:hover .grid-img-text-panel {
+    animation: project_text_hover 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* .grid-img-container:hover .grid-img {
+    animation: project_image_hover 0.25s ease-out;
+    animation-fill-mode: forwards;
+} */
+
+@keyframes project_image_hover {
+    from {
+        transform: scale(1.0);
+        opacity: 1;
+    } to {
+        transform: scale(1.05);
+        opacity: 0.05;
+    }
+}
+
+@keyframes project_text_hover {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

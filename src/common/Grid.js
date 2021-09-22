@@ -35,13 +35,20 @@ const Grid = ({
         width: calculatedRowHeight * image[1] - margin + "px",
 
         // Don't add margin to the last item in a row
-        marginRight: rowIndex === row.length - 1 ? 0 : margin + "px"
+
       };
       return (
-        <div>
-          <div>
-            {image[0].title}
-          </div>
+        <div
+          key={"img_" + image[0].id + "_" + image[1]}
+          style={{
+            height: calculatedRowHeight + "px",
+
+            // Take back out the margin from the ratio.
+            width: calculatedRowHeight * image[1] - margin + "px",
+            marginRight: rowIndex === row.length - 1 ? 0 : margin + "px"
+          }}
+          className="grid-img-container"
+        >
           <img
             className={`grid-img ${isLightboxEnabled ? "lightbox-enabled" : ""}`}
             style={imageStyle}
@@ -49,8 +56,23 @@ const Grid = ({
             onClick={isLightboxEnabled ? handleImageClick : undefined}
             src={image[0].src}
             alt={image[0].alt}
-            key={"img_" + image[0].id + "_" + image[1]}
+
           />
+
+          <div
+            className="grid-img-text-panel"
+          >
+            <div
+              className="grid-img-text"
+            >
+              {image[0].title}
+            </div>
+            <div>
+              {image[0].description}
+            </div>
+
+          </div>
+
         </div>
       );
     },
