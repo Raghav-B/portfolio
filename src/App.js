@@ -40,7 +40,7 @@ function App() {
           height: "100%"
         }}>
 
-        <About></About>
+        {/* <About></About> */}
         <Projects></Projects>
         <WorkExperience></WorkExperience>
 

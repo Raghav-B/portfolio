@@ -1,0 +1,27 @@
+.logoImage {
+    width: 50px;
+    filter: brightness(0) saturate(100%);
+}
+
+.logoImage:hover {
+    animation: logoIncrease 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.tableText {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    word-wrap: normal;
+    width: 25%;
+    font-weight: 200;
+}
+
+@keyframes logoIncrease {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}

@@ -52,7 +52,6 @@ function Doodles(props) {
                 height: `${props.mainHeight}px`,
                 width: "100%",
                 backgroundColor: "#E6E6E6",
-                // backgroundColor: "red",
                 overflow: "hidden",
             }}
         >
@@ -66,7 +65,7 @@ function Doodles(props) {
                             // zIndex: 0,
                             top: `${Math.round(Math.random() * props.mainHeight)}px`,
                             left: `${Math.round(Math.random() * windowWidth)}px`,
-                            opacity: "0.1",
+                            opacity: "0.05",
                             minHeight: "0px",
                             width: `${Math.round(windowWidth * 0.2)}px`,
                         }}

@@ -73,7 +73,7 @@ function ImageSlider(props) {
                             style={{
                                 position: "relative",
                                 width: "100%",
-                                height: `${Math.round(windowHeight * 0.4)}px`,
+                                height: `${Math.round(windowHeight * 0.35)}px`,
                                 marginLeft: "5px",
                                 marginRight: "5px"
                             }}

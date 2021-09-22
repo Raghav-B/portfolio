@@ -1,7 +1,6 @@
 import React, { useRef, createRef, useEffect } from 'react';
 import ProjectTile from './ProjectTile';
 import { projectData } from './ProjectData';
-import ProjectAccordion from './ProjectAccordion';
 import Tabs from '../common/Tabs';
 
 function Projects(props) {
@@ -34,7 +33,7 @@ function Projects(props) {
                     textAlign: "center"
                 }}
             >
-                The best way to showcase my breadth of skills
+                The best way to showcase my <b>breadth of skills</b>
             </div>
 
             <Tabs

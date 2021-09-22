@@ -1,105 +1,64 @@
-.projectTileText {
-    opacity: 1;
+.img_container {
+    /* height: 50vh; */
+    /* max-height: auto; */
+    max-width: 30%;
+    height: auto;
+    /* background-color: blue; */
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
 }
 
-.modalBackButton:hover {
-    cursor: pointer;
-    animation: backAnimation 0.1s ease-out;
-    animation-fill-mode: forwards;
+.project_image {
+    max-height: 100%;
+    width: auto;
 }
 
-.modalBackButton {
-    transform: scale(-1);
-    max-width: 40px;
+.project_text_panel {
     position: absolute;
-    top: 10px;
-    left: 5px;
-    cursor: auto;
+    z-index: -1;
+    height: 100%;
+    color: black;
+    text-align: center;
+    background-color: white;
+    font-size: 0.9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-@keyframes backAnimation {
+.project_body_text {
+    text-align: center;
+}
+
+.img_container:hover .project_image {
+    animation: project_image_hover 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.img_container:hover .project_text_panel {
+    animation: project_text_hover 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes project_text_hover {
     from {
-        transform: scale(-1);
+        opacity: 0;
     } to {
-        transform: scale(-1.3);
+        opacity: 1;
     }
 }
 
-.projectTileImg {
-    /* max-width: 300px; */
-    /* min-height: 200px;
-    max-height: 200px;
-    width: auto; */
-    max-width:110%;
-    /* min-height: 200px; */
-    height:auto;
-    /* height: "100%"; */
-    /* filter: blur(2px); */
-    
-}
-
-.projectTile:hover {
-    animation: projectTileAnimation 0.1s ease-out;
-    animation-fill-mode: forwards;
-}
-
-.projectTile:hover .projectTileText {
-    animation: projectTileTextAnimation 0.1s ease-out;
-    animation-fill-mode: forwards;
-}
-
-
-.projectTile:hover .projectTileImg {
-    animation: projectTileImgAnimation 0.1s ease-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes projectTileTextAnimation {
-    from { 
-        opacity: 1; 
-        cursor: auto;
+@keyframes project_image_hover {
+    from {
+        transform: scale(1.0);
+        opacity: 1;
+    } to {
+        transform: scale(1.05);
+        opacity: 0.05;
     }
-    to { 
-        opacity: 0; 
-        cursor: pointer;
-    }
-}
-
-@keyframes projectTileImgAnimation {
-    from { 
-        transform: scale(1,1);
-        /* filter: blur(2px) */
-    }    
-    to { 
-        transform: scale(0.95,0.95);
-        /* filter: blur(0px) */
-    }
-}
-
-@keyframes projectTileAnimation {
-    from { 
-        /* transform: scale(1); */
-        /* filter: blur(2px) */
-    }    
-    to { 
-        /* transform: scale(1.05); */
-        /* filter: blur(0px) */
-    }
-}
-
-.ReactModal__Overlay {
-    opacity: 0;
-    transform: translateY(100%);
-    transition: transform 150ms ease-out;
-    /* transition: opacity 500ms ease-out; */
-}
-
-.ReactModal__Overlay--after-open{
-    opacity: 1;
-    transform: translateY(0%);
-}
-
-.ReactModal__Overlay--before-close{
-    opacity: 0;
-    transform: translateY(100%);
 }

@@ -1,14 +1,8 @@
 import React from "react";
-// import "../Section.css"
-// import "./About.css"
-// import GithubLogo from "./imgs/github1.svg";
-// import LinkedInLogo from "./imgs/linkedin1.svg";
-// import ScrollArrow from "./imgs/Scrollarrow.png";
-// import "../Animations.css";
-// import { BrowserRouter, Route } from 'react-router-dom';
-// import { NavHashLink as Link } from 'react-router-hash-link';
 import ImageSlider from "./ImageSlider.js";
 import RoleSlider from "./RoleSlider.js";
+import "./About.css";
+
 
 function About(props) {
   return (
@@ -30,7 +24,75 @@ function About(props) {
       </div>
 
       <RoleSlider></RoleSlider>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          marginTop: "2%",
+          width: "10%",
+        }}
+      >
+        <a
+          className="logoImage"
+          href="https://github.com/Raghav-B">
+          <img
+            src={require("../imgs/Icons/github.svg")}
+          ></img>
+        </a>
+
+        <a
+          className="logoImage"
+          href="https://www.linkedin.com/in/raghavbhardwaj/">
+          <img
+            src={require("../imgs/Icons/linkedin.svg")}
+          >
+          </img>
+        </a>
+      </div>
+
       <ImageSlider></ImageSlider>
+
+      <div
+        style={{
+          fontSize: "50px",
+          marginBottom: "20px",
+          textAlign: "center"
+        }}
+      >
+        What I bring to the table
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          marginBottom: "3%"
+        }}
+      >
+        <div
+          className="tableText"
+        >
+          Demonstrated ability to <br /><b>learn anything quickly</b>
+        </div>
+        <div
+          className="tableText"
+        >
+          Out-of-the-box <b>problem-solving</b> <br />through <b>multidisciplinary skills</b>
+        </div>
+        <div
+          className="tableText"
+        >
+          Excellent <b>communication</b> <br />and <b>collaboration</b> skills
+        </div>
+      </div>
+
+
+
+
     </div>
 
 

@@ -1,4 +1,6 @@
 import React, { useRef, useState } from 'react';
+import ProjectSlide from '../components/ProjectSlide';
+import ProjectTile from '../components/ProjectTile';
 import "./Tabs.css";
 
 class Tabs extends React.Component {
@@ -6,7 +8,7 @@ class Tabs extends React.Component {
         super(props);
 
         this.state = {
-            activeTab: 0
+            activeTab: -1
         }
 
         this.changeTabOnClick = this.changeTabOnClick.bind(this);
@@ -64,7 +66,12 @@ class TabContent extends React.Component {
                 className={'tabs-textItem ' + (activeClass === index ? 'show' : '')}
                 key={index}
             >
-                {item.flavorText}
+                {
+                    <ProjectSlide
+                        {...item}
+                    >
+                    </ProjectSlide>
+                }
             </div>
         });
 

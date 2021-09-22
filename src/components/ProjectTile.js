@@ -2,59 +2,36 @@ import React, { forwardRef, useRef, useState } from 'react';
 import "./ProjectTile.css";
 
 function ProjectTile(props) {
-
-    return (
-        <div>
+    if (props.url !== "") {
+        return (
+            <a
+                className="img_container"
+                href={props.url}>
+                <div className="project_text_panel">
+                    <h4>{props.title}</h4>
+                    <div className="project_body_text">
+                        {props.description}
+                    </div>
+                    <h3>Click to view on GitHub</h3>
+                </div>
+                <img className="project_image" src={props.img}></img>
+            </a>
+        )
+    } else {
+        return (
             <div
-                onClick={() => {
-                    props.onClick();
-                }}
-                className="projectTile"
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "300px",
-                    height: "50px",
-                    backgroundColor: "white",
-                    margin: "10px",
-                    position: "relative",
-                    overflow: "hidden",
-                    boxShadow: "3px 3px 10px -6px #000000"
-                }}
+                className="img_container"
             >
-                <img
-                    className="projectTileImg"
-                    src={props.img}
-                />
-
-                <div
-                    className="projectTileText"
-                    style={{
-                        position: "absolute",
-                        fontSize: "30px",
-                        textAlign: "center",
-                        fontWeight: "normal",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        backgroundColor: "rgb(255,255,255,0.7)",
-                        height: "200px",
-                        width: "100%",
-                        zIndex: 0
-                    }}
-                >
-                    <div
-                        style={{
-                            padding: "10%"
-                        }}
-                    >
-                        {props.title}
+                <div className="project_text_panel">
+                    <h4>{props.title}</h4>
+                    <div className="project_body_text">
+                        {props.description}
                     </div>
                 </div>
-            </div >
-        </div >
-    );
+                <img className="project_image" src={props.img}></img>
+            </div>
+        )
+    }
 }
 
 export default ProjectTile;

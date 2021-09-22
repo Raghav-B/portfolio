@@ -25,7 +25,7 @@ function RoleSlider(props) {
                     fontSize: "30px",
                 }}
             >
-                A holistic blend of
+                A <b>holistic blend</b> of
             </div>
 
 
