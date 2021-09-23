@@ -38,7 +38,6 @@ function ProjectSlide(props) {
                         const aspect = dims.width / dims.height;
                         const newWidth = Math.round(dims.width / 2);
                         const newHeight = Math.round(newWidth / aspect);
-                        // console.log(project.img, newWidth, newHeight);
                         const newImage = {
                             src: project.img,
                             width: newWidth,
@@ -74,7 +73,7 @@ function ProjectSlide(props) {
         >
             <div
                 style={{
-                    marginBottom: "3%"
+                    marginBottom: "2%"
                 }}
             >{props.flavorText}</div>
 
@@ -82,7 +81,7 @@ function ProjectSlide(props) {
                 (imagesData.length === 0) ? <div></div> :
                     <Grid
                         images={imagesData}
-                        rowHeight={400}
+                        rowHeight={350}
                         margin={10}
                         isLightboxEnabled={true}
                         width={windowWidth * 0.8}

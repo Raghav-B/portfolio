@@ -21,7 +21,7 @@
     background-color: white;
 
     opacity: 0;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     padding: 5%;
     /* z-index: 0; */
@@ -29,7 +29,7 @@
 
 .grid-img-text {
     font-size: 20px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .grid-img-container:hover .grid-img-text-panel {
@@ -37,25 +37,11 @@
     animation-fill-mode: forwards;
 }
 
-/* .grid-img-container:hover .grid-img {
-    animation: project_image_hover 0.25s ease-out;
-    animation-fill-mode: forwards;
-} */
-
-@keyframes project_image_hover {
-    from {
-        transform: scale(1.0);
-        opacity: 1;
-    } to {
-        transform: scale(1.05);
-        opacity: 0.05;
-    }
-}
 
 @keyframes project_text_hover {
     from {
         opacity: 0;
     } to {
-        opacity: 1;
+        opacity: 0.90;
     }
 }

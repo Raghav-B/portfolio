@@ -3,8 +3,8 @@ import { useSwipeable } from "react-swipeable";
 import "./Lightbox.css";
 
 const Lightbox = ({ selectedImage, onNext, onPrev, onClose }) => {
-  const [showLeftArrow, setShowLeftArrow] = useState(false);
-  const [showRightArrow, setShowRightArrow] = useState(false);
+  const [showLeftArrow, setShowLeftArrow] = useState(true);
+  const [showRightArrow, setShowRightArrow] = useState(true);
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => onNext(),
@@ -45,35 +45,46 @@ const Lightbox = ({ selectedImage, onNext, onPrev, onClose }) => {
     <>
       <div className="lightbox-backdrop" onClick={onClose} />
       <div className="lightbox-window">
-        <div className="lightbox-header-shadow">
+        <div
+          style={{
+            backgroundColor: "white",
+            padding: "1%",
+            width: "100%",
+            position: "relative"
+          }}
+        >
           <img
             className="back-button"
             src={require("../imgs/Icons/left-arrow.svg")}
             alt="back-button-icon"
             onClick={onClose}
           />
+          {selectedImage.description}
         </div>
+
         <div {...swipeHandlers} className="lightbox-image-container">
           <div
             className="arrow-container left-arrow"
             onClick={onPrev}
-            onMouseEnter={() => setShowLeftArrow(true)}
-            onMouseLeave={() => setShowLeftArrow(false)}
+          // onMouseEnter={() => setShowLeftArrow(true)}
+          // onMouseLeave={() => setShowLeftArrow(false)}
           >
             {showLeftArrow ? (
               <img src={require("../imgs/Icons/chevron-left.svg")} alt="left arrow icon" />
             ) : null}
           </div>
+
           <img
             id="lightbox-image"
             src={selectedImage.src}
             alt={selectedImage.alt}
           />
+
           <div
             className="arrow-container right-arrow"
             onClick={onNext}
-            onMouseEnter={() => setShowRightArrow(true)}
-            onMouseLeave={() => setShowRightArrow(false)}
+          // onMouseEnter={() => setShowRightArrow(true)}
+          // onMouseLeave={() => setShowRightArrow(false)}
           >
             {showRightArrow ? (
               <img src={require("../imgs/Icons/chevron-right.svg")} alt="right arrow icon" />

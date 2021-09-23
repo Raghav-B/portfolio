@@ -15,7 +15,7 @@ const Grid = ({
   const [selectedIndex, setSelectedIndex] = useState();
 
   const handleImageClick = e => {
-    setSelectedIndex(e.target.getAttribute("data-index"));
+    setSelectedIndex(e.currentTarget.getAttribute("data-index"));
     setShowLightbox(true);
   };
 
@@ -24,8 +24,6 @@ const Grid = ({
   const imageDataToImgTag = useCallback(
     (image, totalIndex, rowIndex, row, imageWidth) => {
       const calculatedRowHeight = width / imageWidth;
-      console.log(image);
-
       // Calculate the dimensions and margin of each image. This needs
       // to be inline since we need some values from the JS.
       let imageStyle = {
@@ -39,26 +37,27 @@ const Grid = ({
       };
       return (
         <div
+          onClick={isLightboxEnabled ? handleImageClick : undefined}
           key={"img_" + image[0].id + "_" + image[1]}
           style={{
             height: calculatedRowHeight + "px",
-
+            cursor: "pointer",
             // Take back out the margin from the ratio.
             width: calculatedRowHeight * image[1] - margin + "px",
             marginRight: rowIndex === row.length - 1 ? 0 : margin + "px"
           }}
-          className="grid-img-container"
+          className="grid-img-container lightbox-enabled"
+          src={image[0].src}
+          alt={image[0].alt}
+          data-index={totalIndex}
+          description={image[0].description}
         >
           <img
             className={`grid-img ${isLightboxEnabled ? "lightbox-enabled" : ""}`}
             style={imageStyle}
-            data-index={totalIndex}
-            onClick={isLightboxEnabled ? handleImageClick : undefined}
             src={image[0].src}
             alt={image[0].alt}
-
           />
-
           <div
             className="grid-img-text-panel"
           >
@@ -67,10 +66,6 @@ const Grid = ({
             >
               {image[0].title}
             </div>
-            <div>
-              {image[0].description}
-            </div>
-
           </div>
 
         </div>
@@ -91,6 +86,9 @@ const Grid = ({
     // The "min" aspect ratio is the aspect ratio that will allow the row to
     // span the correct length while being between minRowHeight and maxRowHeight
     const minAspectRatio = width / rowHeight;
+
+    let imageIndex = 0;
+
     for (let i = 0; i < images.length; i++) {
       let image = images[i];
       // Add the margin into the ratio.
@@ -110,8 +108,9 @@ const Grid = ({
         let imageElements = [];
         for (let j = 0; j < row.length; j++) {
           imageElements.push(
-            imageDataToImgTag(row[j], i - row.length + j, j, row, widthSoFar)
+            imageDataToImgTag(row[j], imageIndex, j, row, widthSoFar)
           );
+          imageIndex++;
         }
         // Add the finished row to the list of all rows.
         allRows.push(imageElements);
