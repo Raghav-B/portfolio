@@ -80,7 +80,7 @@ export const projectData = [
             },
             {
                 title: "CCTV Traffic Accident Detector",
-                description: <div>Computer vision pipeline that uses <b>object detection</b> implemented using <b>Keras</b>and a
+                description: <div>Computer vision pipeline that uses <b>object detection</b> implemented using <b>Keras</b> and a
                     custom object-vector-tracking algorithm to detect accidents through real-time CCTV feeds.
                     <br /><b><i>Finalist in Singapore Computer Society's Splash Awards AI Innovation Challenge 2019</i></b></div>,
                 img: require("../imgs/Projects/AIML/CCTV.png"),
@@ -103,7 +103,7 @@ export const projectData = [
             {
                 title: "Team LumiNUS - DJI RoboMaster Robotics Competition 2020",
                 description: <div>Independently developed initial firmware for robots using <b>freeRTOS</b> on an ARM microcontroller.
-                    Additionally setup intra-robot communication through <b>CAN bus</b> and <b>UART</b>, designed <b>PID control system</b>
+                    Additionally setup intra-robot communication through <b>CAN bus</b> and <b>UART</b>, designed <b>PID control system </b>
                     for actuator control. This firmware continues to be used as backbone code for the team to this day.</div>,
                 img: require("../imgs/Projects/Robotics/RoboMaster.jpg"),
                 url: ""
@@ -111,7 +111,7 @@ export const projectData = [
             {
                 title: "Team Hornet - Singapore Autonomous Underwater Vehicle Challenge",
                 description: <div>Developed computer vision capabilities of the vehicle using <b>OpenCV</b> in <b>C++</b> to perform
-                    autonomous underwater feature recognition. Interfaced this computervision pipeline with the rest of the robot
+                    autonomous underwater feature recognition. Interfaced this computer vision pipeline with the rest of the robot
                     using <b>ROS</b></div>,
                 img: require("../imgs/Projects/Robotics/Hornet.png"),
                 url: ""
@@ -125,7 +125,7 @@ export const projectData = [
             },
             {
                 title: "Simple Arduino Maze-Running Bot",
-                description: <div>Simple <b>Arduino</b>-based robot that interfaced with <b>Infrared</b>, <b>Ultrasonic</b>, <b>LDR</b>
+                description: <div>Simple <b>Arduino</b>-based robot that interfaced with <b>Infrared</b>, <b>Ultrasonic</b>, <b>LDR </b>
                     and other sensors to follow directions to navigate a maze.</div>,
                 img: require("../imgs/Projects/Robotics/mazebot.png"),
                 url: ""
@@ -164,7 +164,7 @@ export const projectData = [
             {
                 title: "Gamified Food Waste Solution",
                 description: <div>IOT-based rewards system to help students develop a lasting habit of reducing food waste. Independently
-                    handled full tech stack for team with <b>React</b> for frontend, <b>Flask + Firebase</b> for backend, and a <b>Raspberry Pi</b>
+                    handled full tech stack for team with <b>React</b> for frontend, <b>Flask + Firebase</b> for backend, and a <b>Raspberry Pi </b>
                     with <b>Arduino</b> for the smart dustbin system that detects food waste.
                     <br /><b><i>Winner of TCS Sustainathon 2020</i></b>
                 </div>,

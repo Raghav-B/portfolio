@@ -14,14 +14,27 @@ function WorkExperience(props) {
                 justifyContent: "flex-start",
                 width: "100%",
                 zIndex: 1,
+                marginBottom: "2%"
             }}
         >
             <div
+                className="scroll_anim init_right"
                 style={{
                     fontSize: "50px",
                 }}
             >
                 Work Experience
+            </div>
+
+            <div
+                className="scroll_anim init_top"
+                style={{
+                    marginTop: "1%",
+                    fontSize: "30px",
+                    textAlign: "center"
+                }}
+            >
+                Professional working experience
             </div>
 
             <div
@@ -75,92 +88,88 @@ function WorkExperience(props) {
                         ]}
                     />
 
-                    {/* 
-                        <VerticalTimelineElement
-                            // style={{
-                            //     marginTop: "-25%"
-                            // }}
-                            className="vertical-timeline-element--work"
-                            date="Jun 2021 - Aug 2021"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        >
-                            <h3 className="vertical-timeline-element-title">JPMorgan Chase & Co.</h3>
-                            <h4 className="vertical-timeline-element-subtitle">Software Engineering Summer Analyst</h4>
-                            <p>
-                                <ul>
-                                    <li>
-                                        
-                                    </li>
-                                    <li>
-                                        
-                                    </li>
-                                    <li>
-                                        
-                                    </li>
-                                    <li>
-                                        
-                                    </li>
-                                </ul>
-                            </p>
-                        </VerticalTimelineElement>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            date="2008 - 2010"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        >
-                            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                            <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                            <p>
-                                User Experience, Visual Design
-                            </p>
-                        </VerticalTimelineElement>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            date="2006 - 2008"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        >
-                            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                            <p>
-                                User Experience, Visual Design
-                            </p>
-                        </VerticalTimelineElement>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--education"
-                            date="April 2013"
-                            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                        >
-                            <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                            <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                            <p>
-                                Strategy, Social Media
-                            </p>
-                        </VerticalTimelineElement>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--education"
-                            date="November 2012"
-                            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                        >
-                            <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                            <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                            <p>
-                                Creative Direction, User Experience, Visual Design
-                            </p>
-                        </VerticalTimelineElement>
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--education"
-                            date="2002 - 2006"
-                            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                        >
-                            <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                            <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                            <p>
-                                Creative Direction, Visual Design
-                            </p>
-                        </VerticalTimelineElement>
-                        <VerticalTimelineElement
-                            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                        /> */}
+                    <TimelineTile
+                        date="Jun 2020 - Nov 2020"
+                        company="Huawei"
+                        role="Vehicle Cybersecurity Intern"
+                        img={require("../imgs/CompanyLogos/Huawei.png")}
+                        list={
+                            [
+                                <div>Conceived and built Ethernet intrusion detection system using <b>C</b> on <b>AURIX microcontroller</b>
+                                    to be used in company’s modern & self-driving vehicle security suite.
+                                </div>,
+                                <div>Implemented statically allocated hash-map and linked list data structures from scratch in <b>C</b> to
+                                    follow static memory allocation conventions on embedded systems.
+                                </div>,
+                                <div>Researched common cybersecurity threats and attack vectors in automotive domain and performed analysis on
+                                    fraudulent packets using <b>Wireshark.</b>
+                                </div>
+                            ]
+                        }
+                    />
+
+                    <TimelineTile
+                        date="Nov 2019 - Jul 2020"
+                        company="NUS RoboMaster"
+                        role="Captain & CTO"
+                        img={require("../imgs/CompanyLogos/RoboMaster.png")}
+                        list={
+                            [
+                                <div>Managed team of 60+ NUS students to build fleet of 10 robots for DJI RoboMaster Robotics competition.</div>,
+                                <div>Independently developed initial firmware for robots using <b>freeRTOS</b> on an ARM microcontroller.
+                                    Additionally setup intra-robot communication through <b>CAN bus</b> and <b>UART</b>, designed <b>PID control system </b>
+                                    for actuator control. This firmware continues to be used as backbone code for the team to this day.</div>
+                            ]
+                        }
+                    />
+
+                    <TimelineTile
+                        date="May 2019 - Aug 2019"
+                        company="Panasonic R&D Centre Singapore"
+                        role="Deep Learning Intern"
+                        img={require("../imgs/CompanyLogos/Panasonic.png")}
+                        list={
+                            [
+                                <div>Trained <b>Convolutional Neural Network</b> for object detection implemented in <b>TensorFlow</b> to
+                                    perform inventory management with item misplacement detection using <b>OpenCV.</b></div>,
+                                <div>Utilized <b>Python Pandas</b> library to clean and prepare data for training.</div>
+                            ]
+                        }
+                    />
+
+                    <TimelineTile
+                        date="Dec 2018 - Jan 2019"
+                        company="Lemnis Technologies"
+                        role="Software & Hardware Intern"
+                        img={require("../imgs/CompanyLogos/Lemnis.png")}
+                        list={
+                            [
+                                <div>Overhauled flashing of firmware and calibration data to VR headsets by developing GUI in <b>C#</b> to
+                                    manage connected headsets and syncing of firmware from a server.</div>,
+                                <div>Designed and 3D-printed custom attachments with <b>Fusion 360</b> for adding stereo cameras to VR headsets.</div>,
+                                <div>Collaborated on development of mobile and desktop mixed reality app using <b>Unity</b>
+                                    for demonstration in the Consumer Electronics Show 2019.</div>,
+                                <div>Built a 6-degree-of-freedom robotic arm controlled by sending commands to an <b>Arduino</b> through UART
+                                    in <b>MATLAB</b> for testing of gyroscopes in VR headsets.</div>
+                            ]
+                        }
+                    />
+
+                    <TimelineTile
+                        date="Feb 2017 - Aug 2018"
+                        company="Singapore Armed Forced Detention Barracks"
+                        role="Military Policeman"
+                        img={require("../imgs/CompanyLogos/MP.png")}
+                        list={
+                            [
+                                <div>Managed rehabilitation and incarceration of military offenders and cultivated strong conflict management and
+                                    negotiation skills through daily interaction with detainees.</div>,
+                                <div>Awarded Best Soldier of the Month and a Letter of Commendation from Commander of the Military Police unit for
+                                    exceptional performance and resilience in the Detention Barracks’ taxing environment.</div>
+                            ]
+                        }
+                    />
+
                 </VerticalTimeline>
             </div>
         </div>

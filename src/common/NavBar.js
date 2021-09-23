@@ -1,31 +1,17 @@
 import React, { useRef } from 'react';
+import "./NavBar.css";
 
-function NavBar(props) {
-
-    const navHighlight = (event) => {
-        // isClickScrolling = true;
-
-        var curSection = event.target.id;
-        var buttonArr = document.getElementsByClassName("content");
-
-        for (var i = 0; i < buttonArr.length; i++) {
-            if (buttonArr[i].id == curSection) {
-                buttonArr[i].className = "content nav_bar_selected";
-            } else {
-                buttonArr[i].className = "content nav_bar_unselected active";
-            }
-        }
-    }
+function NavBar({ aboutRef, projectsRef, workExperienceRef, educationRef, pressRef, contactRef }) {
 
     return (
         <div>
             <div
                 style={{
-                    height: "25px",
+                    height: "1%",
                     width: "100%",
-                    paddingTop: "1%",
-                    paddingBottom: "1%",
-                    backgroundColor: "#E6E6E6",
+                    // paddingTop: "1%",
+                    // paddingBottom: "1%",
+                    backgroundColor: "#E6E6E6"
                 }}>
                 H
             </div>
@@ -35,66 +21,68 @@ function NavBar(props) {
                     justifyContent: "space-evenly",
                     alignItems: "center",
                     width: "100%",
-                    height: "25px",
                     position: "fixed",
                     zIndex: 5,
                     top: 0,
                     left: 0,
                     textAlign: "center",
                     backgroundColor: "white",
-                    paddingTop: "1%",
-                    paddingBottom: "1%",
                     borderBottomColor: "black",
                     borderBottomWidth: "1px",
-                    borderBottomStyle: "solid"
+                    borderBottomStyle: "solid",
+                    fontFamily: "JosefinSans"
                 }}>
                 <div
-                    style={navBarTextStyle}
-                    to="#aboutme"
+                    className="nav-bar-text"
+                    onClick={() => {
+                        window.scrollTo(0, aboutRef.current.offsetTop - 60)
+                    }}
                 >
-                    About Me
+                    About
                 </div>
                 <div
-                    style={navBarTextStyle}
-                    to="#aboutme"
+                    className="nav-bar-text"
+                    onClick={() => {
+                        window.scrollTo(0, projectsRef.current.offsetTop - 60)
+                    }}
                 >
                     Projects
                 </div>
                 <div
-                    style={navBarTextStyle}
-                    to="#aboutme"
+                    className="nav-bar-text"
+                    onClick={() => {
+                        window.scrollTo(0, workExperienceRef.current.offsetTop - 60)
+                    }}
                 >
                     Work Experience
                 </div>
                 <div
-                    style={navBarTextStyle}
-                    to="#aboutme"
+                    className="nav-bar-text"
+                    onClick={() => {
+                        window.scrollTo(0, educationRef.current.offsetTop - 60)
+                    }}
                 >
                     Education
                 </div>
-                {/* <div
-                    style={navBarTextStyle}
-                    to="#aboutme"
-                >
-                    Skill Toolbox
-                </div> */}
-
                 <div
-                    style={navBarTextStyle}
-                    to="#aboutme"
+                    className="nav-bar-text"
+                    onClick={() => {
+                        window.scrollTo(0, pressRef.current.offsetTop - 60)
+                    }}
                 >
                     In the Press
+                </div>
+                <div
+                    className="nav-bar-text"
+                    onClick={() => {
+                        window.scrollTo(0, contactRef.current.offsetTop - 60)
+                    }}
+                >
+                    Contact
                 </div>
             </div>
         </div>
     );
-}
-
-const navBarTextStyle = {
-    textDecoration: "none",
-    color: "black",
-    fontFamily: "JosefinSans",
-    fontSize: 20
 }
 
 export default NavBar;

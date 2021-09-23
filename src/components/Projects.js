@@ -19,6 +19,7 @@ function Projects(props) {
             }}
         >
             <div
+                className="scroll_anim init_left"
                 style={{
                     fontSize: "50px",
                 }}
@@ -27,6 +28,7 @@ function Projects(props) {
             </div>
 
             <div
+                className="scroll_anim init_top"
                 style={{
                     marginTop: "1%",
                     fontSize: "30px",

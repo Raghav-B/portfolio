@@ -15,6 +15,7 @@ function About(props) {
       zIndex: 1
     }}>
       <div
+        // className="scroll_anim init_top"
         style={{
           fontSize: "50px",
           marginTop: "3%",
@@ -26,6 +27,7 @@ function About(props) {
       <RoleSlider></RoleSlider>
 
       <div
+        // className="scroll_anim init_bottom"
         style={{
           display: "flex",
           justifyContent: "space-evenly",
@@ -55,6 +57,7 @@ function About(props) {
       <ImageSlider></ImageSlider>
 
       <div
+        className="scroll_anim init_bottom"
         style={{
           fontSize: "50px",
           marginBottom: "20px",

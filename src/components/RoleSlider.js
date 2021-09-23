@@ -13,6 +13,7 @@ roles = roles.concat(roles);
 function RoleSlider(props) {
     return (
         <div
+            // className="scroll_anim init_bottom"
             style={{
                 display: "flex",
                 justifyContent: "center",

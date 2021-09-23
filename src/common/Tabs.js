@@ -22,7 +22,7 @@ class Tabs extends React.Component {
 
     render() {
         return (
-            <div className="tabs-body">
+            <div className="tabs-body scroll_anim init_bottom">
                 <TabHeader data={this.props.data}
                     click={this.changeTabOnClick}
                     activeId={this.state.activeTab} />

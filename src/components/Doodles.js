@@ -16,7 +16,7 @@ function Doodles(props) {
 
     useEffect(() => {
         const images = importAll(require.context('../imgs/Doodles', false, /\.(png|jpe?g|svg)$/));
-        setImagesArr(images);
+        setImagesArr(images.concat(images));
     }, []);
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -65,7 +65,7 @@ function Doodles(props) {
                             // zIndex: 0,
                             top: `${Math.round(Math.random() * props.mainHeight)}px`,
                             left: `${Math.round(Math.random() * windowWidth)}px`,
-                            opacity: "0.05",
+                            opacity: "0.07",
                             minHeight: "0px",
                             width: `${Math.round(windowWidth * 0.2)}px`,
                         }}

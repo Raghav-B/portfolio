@@ -6,26 +6,42 @@ import About from "./components/About.js";
 import WorkExperience from './components/WorkExperience.js';
 import Projects from './components/Projects.js';
 import './App.css';
+import Education from './components/Education.js';
+import Press from './components/Press.js';
+import Contact from './components/Contact.js';
 
-var isClickScrolling = false;
-var scrollTimer = -1;
+import "./Animations.css";
 
 function App() {
 
   const mainRef = useRef(null);
   const [mainHeight, setMainHeight] = useState(window.innerHeight);
 
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const workExperienceRef = useRef(null);
+  const educationRef = useRef(null);
+  const pressRef = useRef(null);
+  const contactRef = useRef(null);
+
   useEffect(() => {
     setMainHeight(mainRef.current.offsetHeight);
   }, []);
 
   return (
-    <BrowserRouter>
+    <div>
 
       <Doodles
         mainHeight={mainHeight}
       />
-      <NavBar></NavBar>
+      <NavBar
+        aboutRef={aboutRef}
+        projectsRef={projectsRef}
+        workExperienceRef={workExperienceRef}
+        educationRef={educationRef}
+        pressRef={pressRef}
+        contactRef={contactRef}
+      ></NavBar>
 
       <div
         ref={mainRef}
@@ -37,108 +53,31 @@ function App() {
           backgroundColor: "#E6E6E6",
           fontWeight: 200,
           width: "100%",
-          height: "100%"
+          height: "100%",
+          overflow: "hidden"
         }}>
 
-        {/* <About></About> */}
+        <div ref={aboutRef}></div>
+        <About></About>
+
+        <div ref={projectsRef}></div>
         <Projects></Projects>
+
+        <div ref={workExperienceRef}></div>
         <WorkExperience></WorkExperience>
 
+        <div ref={educationRef}></div>
+        <Education></Education>
 
+        <div ref={pressRef}></div>
+        <Press></Press>
 
-
-
-        {/* <div id="education" className="section">
-          <Education></Education>
-        </div>
-        <div id="awards" className="section">
-          <Awards></Awards>
-        </div>
-        <div id="workexperience" className="section">
-          <WorkExperience></WorkExperience>
-        </div>
-        <div id="projects" className="section">
-          <Projects></Projects>
-        </div>
-        <div id="leadership" className="section">
-          <Leadership></Leadership>
-        </div>
-        <div id="contactme" className="section">
-          <ContactMe></ContactMe>
-        </div> */}
-
+        <div ref={contactRef}></div>
+        <Contact></Contact>
       </div>
-    </BrowserRouter >
+    </div >
   );
 }
-
-// class App extends Component {
-//   constructor() {
-//     super();
-//   }
-
-//   componentDidMount() {
-//     window.addEventListener("scroll", this.handleScroll);
-//   }
-
-//   componentWillUnmount() {
-//     window.removeEventListener("scroll", this.handleScroll);
-//   }
-
-// handleScroll() {
-//   if (isClickScrolling == false) {
-//     var sectionArr = document.getElementsByClassName("section");
-
-//     for (var i = 0; i < sectionArr.length; i++) {
-//       const top = sectionArr[i].getBoundingClientRect().top;
-
-//       if (top >= -40 && top <= window.innerHeight) {
-//         window.location.hash = sectionArr[i].id;
-
-//         var curSection = sectionArr[i].id + "_anchor";
-//         var buttonArr = document.getElementsByClassName("content");
-
-//         for (var i = 0; i < buttonArr.length; i++) {
-//           if (buttonArr[i].id == curSection) {
-//             buttonArr[i].className = "content nav_bar_selected";
-//           } else {
-//             buttonArr[i].className = "content nav_bar_unselected active";
-//           }
-//         }
-//       }
-//     }
-//   } else {
-//     if (scrollTimer != -1) {
-//       clearTimeout(scrollTimer);
-//     }
-
-//     scrollTimer = setTimeout(function () {
-//       isClickScrolling = false;
-//     }, 150);
-//   }
-// }
-
-// navHighlight(event) {
-//   isClickScrolling = true;
-
-//   var curSection = event.target.id;
-//   var buttonArr = document.getElementsByClassName("content");
-
-//   for (var i = 0; i < buttonArr.length; i++) {
-//     if (buttonArr[i].id == curSection) {
-//       buttonArr[i].className = "content nav_bar_selected";
-//     } else {
-//       buttonArr[i].className = "content nav_bar_unselected active";
-//     }
-//   }
-// }
-
-//   render() {
-//     return (
-
-//     );
-//   }
-// }
 
 export default App;
 

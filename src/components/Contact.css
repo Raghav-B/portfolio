@@ -1,0 +1,28 @@
+.contact_container {
+    display: flex;
+    margin: auto;
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: ;
+}
+
+.contact_body_text {
+    width: 20%;
+    height: auto;
+    text-align: left;
+    background-color: white;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    padding: 1.5vw;
+    color: black;
+
+}
+
+.contact_image {
+    width: 30%;
+    height: 30%;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 0.5vw;
+}
