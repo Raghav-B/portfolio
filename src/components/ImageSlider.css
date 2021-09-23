@@ -1,0 +1,45 @@
+@keyframes slide_animation {
+    0% { transform: translate(0%) }
+    100% { transform: translate(-50%) }
+}
+
+.slideDiv:hover {
+    /* animation-play-state: paused; */
+    /* animation: 60s slide_animation linear infinite */
+    /* animation-duration: 60s; */
+}
+
+.slideDiv {
+    display: flex;
+    position: relative;
+    animation: 60s slide_animation linear infinite
+}
+
+.slideImg:hover {
+    animation: slideImgHover 0.1s ease-out;
+    animation-fill-mode: forwards;
+}   
+
+.slideText:hover {
+    animation: slideTextHover 0.1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideImgHover {
+    from {
+        transform: scale(1.0);
+        z-index: 1;
+    } to {
+        transform: scale(1.1);
+        z-index: 3;
+    }
+}
+
+@keyframes slideTextHover {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+

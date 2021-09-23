@@ -1,0 +1,64 @@
+.img_container {
+    /* height: 50vh; */
+    /* max-height: auto; */
+    max-width: 30%;
+    height: auto;
+    /* background-color: blue; */
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.project_image {
+    max-height: 100%;
+    width: auto;
+}
+
+.project_text_panel {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    color: black;
+    text-align: center;
+    background-color: white;
+    font-size: 0.9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.project_body_text {
+    text-align: center;
+}
+
+.img_container:hover .project_image {
+    animation: project_image_hover 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.img_container:hover .project_text_panel {
+    animation: project_text_hover 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes project_text_hover {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes project_image_hover {
+    from {
+        transform: scale(1.0);
+        opacity: 1;
+    } to {
+        transform: scale(1.05);
+        opacity: 0.05;
+    }
+}
